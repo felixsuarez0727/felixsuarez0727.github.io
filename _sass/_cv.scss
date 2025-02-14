@@ -218,3 +218,10 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+
+.three-column-layout .column {
+  width: 33%;
+  float: left;
+  padding: 10px;
+}
