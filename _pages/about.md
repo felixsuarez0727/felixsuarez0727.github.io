@@ -32,9 +32,8 @@ social: true  # includes social icons at the bottom of the page
 ## Research Interests
 - Software Development and DevOps
 - Artificial Intelligence & Machine Learning  
-- Database Systems
 - Multiple Programming Languages (C/C++, PHP, Java, Python, C#)
-- Computer Science Education (former professor at University of Costa Rica)
+- Computer Science Education (Ex-professor at University of Costa Rica)
 
 ---
 
