@@ -16,7 +16,7 @@ div,
 li,
 span,
 strong {
-  color: var(--global-text-color);
+  color: "#f9f9f9";
 }
 
 hr {
@@ -760,6 +760,7 @@ footer.sticky-bottom {
       }
 
       .title {
+        color: #2698ba;
         font-weight: bolder;
       }
 
