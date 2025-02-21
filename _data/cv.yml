@@ -14,19 +14,46 @@
     - name: Location
       value: Santa Ana, San José, Costa Rica
 
+
 - title: Education
   type: time_table
   contents:
-    - title: Master of Business Administration (MBA)
+    - title: Master of Digital Business
       institution: Universitat Politècnica de València (UPV)
       year: 2023
       description:
-        - Business, Management, Marketing, and Related Support Services
-    - title: Executive Master in Management
+        - "Digital Business, Management, Marketing, and Related Support Services"
+    - title: Master in Management
       institution: INCAE Business School
-      year: 2021 - 2022
+      year: 2022
       description:
-        - Business Administration and Management, General
+        - "Business Administration and Management"
+    - title: Academic Master in Computer Science
+      institution: Universidad de Costa Rica UCR
+      year: 2021
+      description:
+        - "Security, Natural Language Processing, Robotics, and Machine Learning"
+    - title: Academic Master in Electrical Engineering
+      institution: Universidad de Costa Rica UCR
+      year: 2019
+      description:
+        - "Thesis: Mapping for translation of the action language to instructions of the object model system"
+    - title: Master's degree with honors in Electromechanics
+      institution: Tecnológico de Costa Rica
+      year: 2015
+      description:
+        - "Thesis: Energy Management Model for the new high-density post-silicon laboratory of Intel Costa Rica"
+    - title: Licentiate with honors in Electrical Engineering
+      institution: University of Costa Rica
+      year: 2017
+      description:
+        - "Thesis: Integration of the hardware and software of the humanoid robot of the ARCOS-LAB of the EIE"
+    - title: Bachelor in Electrical Engineering
+      institution: University of Costa Rica
+      year: 2009
+      description:
+        - "Thesis: Design and construction of a temperature control system for an egg incubator"
+
 
 - title: Experience
   type: time_table
@@ -38,19 +65,12 @@
         - Specialized in Databases and Amazon Web Services (AWS)
         - Development of cloud-based software solutions
     - title: Software Developer
-      institution: Intel Corporation, Virtual Platform Group (VPG)
-      year: 2014 - 2020
+      institution: Intel Corporation
+      year: 2012 - 2020
       description:
         - Software Developer in Hardware Design organization
-        - Working in Virtual Platform Group (VPG)
+        - Worked in Virtual Platform Group (VPG)
         - Development of virtual platform solutions
-    - title: Product Development Engineer
-      institution: Intel Corporation, Manufacturing Development Organization (MDO)
-      year: 2012 - 2014
-      description:
-        - Focused on SQL and Linux development
-        - Software Development Life Cycle (SDLC)
-        - Database management and development
     - title: Radar Maintenance Engineer
       institution: COCESNA (Central American Corporation of Air Navigation Services)
       year: 2009 - 2012
@@ -58,6 +78,14 @@
         - Specialized in Linux systems
         - International organization dedicated to air navigation services
         - Maintenance and optimization of radar systems
+    - title: Professor & Researcher
+      institution: University of Costa Rica
+      year: 2012 - 2023
+      description:
+        - Professor and researcher in relevant fields
+        - Conducted research and mentored students
+        - Contributed to academic publications and projects
+
 
 - title: Publications
   type: time_table
@@ -65,23 +93,67 @@
     - title: BETO Emotion Analysis of Facebook Users Reacting to Major Media Outlets in Costa Rica
       year: 2021
       description:
-        - Published in IEEE
-        - Emotion analysis service using Transfer Learning and BETO for Spanish Facebook posts
-        - Implementation of natural language processing techniques
+        - Implemented emotion analysis service for Spanish Facebook posts using Transfer Learning and BETO, applying natural language processing techniques.
+        
     - title: Robotic architecture to map an action language to low-level motion commands for skillful manipulation
       year: 2020
       description:
-        - Published in IEEE
-        - Overview of robotic architecture for skillful manipulation
-        - Development of action language mapping systems
+        - Developed robotic architecture for skillful manipulation, including the creation of action language mapping systems.
+    - title: Automatic Translation of Spanish Natural Language Commands to Control Robot Commands Based on LSTM Neural Network
+      year: 2019
+      description:
+        - Utilized an LSTM neural network to translate Spanish natural language commands into Robot Control Language (RCL), achieving low loss with a manually generated corpus.
+        
+    - title: Analysis of Atomic Manipulation Tasks in Human-Shared Scenarios for a Humanoid Robot
+      year: 2018
+      description:
+        - Analysis of atomic manipulation tasks in a kitchen and collaborative workshop for humanoid robots
 
 - title: Certifications
   type: time_table
   contents:
-    - year: 2020
+    - title: Google AI Essentials
+      year: 2025
+      description:
+        - Issued by: Google
+        - Issued: Feb 2025
+
+    - title: Getting Started with AI on Jetson Nano
+      year: 2025
       items:
-        - Agile Testing (LinkedIn)
-        - CLE – C Certified Entry-Level Programmer (C++ Institute)
+        - Issued by: NVIDIA
+        - Issued: Jan 2025
+
+    - title: Agile Testing
+      year: 2020
+      items:
+        - Issued by: LinkedIn
+        - Issued: Sep 2020
+
+    - title: CLE C Certified Entry-Level Programmer
+      year: 2020
+      items:
+        - Issued by: C++ Institute
+        - Issued: Sep 2020
+
+    - title: Programming Foundations: Software Testing/QA
+      year: 2020
+      items:
+        - Issued by: LinkedIn
+        - Issued: Aug 2020
+
+    - title: Scrum Product Owner Professional Certificate
+      year: 2020
+      items:
+        - Issued: Aug 2020
+        - Expired: Aug 2022
+
+    - title: PCEP - Certified Entry-Level Python Programmer
+      year: 2020
+      items:
+        - Issued by: Python Developer
+        - Issued: Aug 2020
+
 
 - title: Technical Skills
   type: nested_list
