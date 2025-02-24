@@ -1,81 +1,87 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Conway's Game of Life
+description: A Python QtPY implementation of Conway's Game of Life
+img: assets/img/conway.png
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Conway's Game of Life is a cellular automaton simulation. This project features two executable versions:
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+- `conway_gui.py`: A simple mode for easy execution.
+- `conway_gui_complex.py`: A complex mode with additional configuration options.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Requirements ❗️
+Ensure you have the following installed:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- Python
+- pip
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Setup Instructions
+1. Create a virtual environment:
+   ```sh
+   python -m venv venv
+   ```
+2. Activate the virtual environment:
+   - On Windows:
+     ```sh
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```sh
+     source venv/bin/activate
+     ```
+3. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### Running the Application
+For the simple mode:
+```sh
+python conway_gui.py
+```
+Check out how it looks:
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+{% include figure.liquid loading="eager" path="assets/img/conway_simple.gif" title="Simple Conway Mode" class="img-fluid rounded z-depth-1" %}
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+For the complex mode:
+```sh
+python conway_gui_complex.py
 ```
 
-{% endraw %}
+{% include figure.liquid loading="eager" path="assets/img/conway_complex.gif" title="Complex Conway Mode" class="img-fluid_customized rounded z-depth-1" %}
+
+### Configuration Options
+In `conway_gui_complex.py`, configure the following before starting:
+
+- **Rows**: Number of matrix rows.
+- **Columns**: Number of matrix columns.
+- **Generations**: Number of updates for the matrix.
+- **Probability**: Probability of alive cells.
+
+To run:
+1. Set matrix size and generations.
+2. Click "Draw Matrix."
+3. Click "Start Game."
+4. Click "Stop Game" to halt execution.
+
+## Project Structure 📦
+```
+conway/
+├── conway.py
+├── conway_gui.py
+├── conway_gui_complex.py
+├── animation_conway_gui.gif
+├── animation_conway_gui_complex.gif
+├── custom_dialog.py
+├── infinity.png
+├── readme.md
+├── requirements.txt
+└── worker.py
+```
+
+## About
+This implementation of Conway's Game of Life offers both simple and complex modes with enhanced visualization using Python and QtPY. Stay tuned for future updates!
