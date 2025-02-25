@@ -405,9 +405,9 @@ ninja.data = [{
           description: "A Python QtPY implementation of Conway&#39;s Game of Life",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-arithmeticcalculatorreact",
+          title: 'ArithmeticCalculatorREACT',
+          description: "A web application for performing arithmetic calculations using a REST API.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
