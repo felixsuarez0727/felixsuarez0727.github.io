@@ -1,81 +1,69 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+repo: https://github.com/felixsuarez0727/ArithmeticCalculatorREACT
+title: ArithmeticCalculatorREACT
+description: A web application for performing arithmetic calculations using a REST API.
+img: assets/img/math_symbol.png
 importance: 2
 category: work
-giscus_comments: true
+giscus_comments: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Project Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This React WebApp interacts with an Arithmetic Calculator REST API. It supports operations such as:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Square root
+- Random string generation
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+The backend serves random strings via a webservice provided by Random.Org.
+
+## Security
+
+Security is ensured using JWT tokens generated during user authentication, with credentials securely stored in the backend database's User table.
+
+## Configuration
+
+The application uses an `.env` file for environment-specific settings, with the `VITE_BACKEND_API` variable specifying the backend API URL. For development, it's set to:
+
+- VITE_BACKEND_API= `http://127.0.0.1:8000/v1/ `
+
+## Running the Development Version
+
+1. Ensure that Node.js is installed on your machine.
+2. Clone the repository or download it.
+3. Open terminal and navigate to the folder: `CalculatorReact`
+4. Run `npm install`: This will install the dependencies.
+5. Run `npm run dev`: This will run the app.
+
+## Publishing the Production Version
+
+1. Ensure that Node.js is installed on your machine.
+2. Clone the repository or download it.
+3. Open terminal and navigate to the folder: `CalculatorReact`
+4. Run `npm install`: This will install the dependencies.
+5. Run `npm run build`: This will build the deployable WebApp.
+6. Run `npm run preview`: This will run the app from the `dist` folder.
+
+   The generated files for production will be in the `dist` folder. Deploy the contents of this folder to your hosting service.
+
+## LIVE VERSION
+
+Find the running app here:
+
+- [BackEnd Documentation](https://img-arithmetic-calculator-restapi-3rzadn5oaa-uc.a.run.app/docs)
+- [FrontEnd WebApp](https://main--react-arithmetic-calculator-2024.netlify.app/)
+
+
+<!-- Button to GitHub Repo -->
+<div style="text-align:left; margin-bottom: 20px;">
+  <a href="{{ page.repo }}" target="_blank">
+    <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      View Repository on GitHub
+    </button>
+  </a>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

@@ -1374,3 +1374,10 @@ ninja-keys::part(ninja-input-wrapper) {
   max-width: 50%;
   height: auto;
 }
+
+/* Light mode button color */
+
+#github-repo-button {
+  background-color: var(--global-theme-color);
+}
+

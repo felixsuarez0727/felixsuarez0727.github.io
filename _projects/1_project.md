@@ -1,12 +1,14 @@
 ---
 layout: page
+repo: https://github.com/felixsuarez0727/Conway
 title: Conway's Game of Life
 description: A Python QtPY implementation of Conway's Game of Life
 img: assets/img/conway.png
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
+
 
 Conway's Game of Life is a cellular automaton simulation. This project features two executable versions:
 
@@ -84,4 +86,13 @@ conway/
 ```
 
 ## About
-This implementation of Conway's Game of Life offers both simple and complex modes with enhanced visualization using Python and QtPY. Stay tuned for future updates!
+This implementation of Conway's Game of Life offers both simple and complex modes with enhanced visualization using Python and QtPY. See More on Github!
+
+<!-- Button to GitHub Repo -->
+<div style="text-align:left; margin-bottom: 20px;">
+  <a href="{{ page.repo }}" target="_blank">
+    <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      View Repository on GitHub
+    </button>
+  </a>
+</div>
