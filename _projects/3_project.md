@@ -1,6 +1,5 @@
 ---
 layout: page
-repo: https://github.com/felixsuarez0727/Data_Extraction_Test
 title: Data Extraction Test Project
 description: A project for extracting and processing product data from websites using Scrapy and Python.
 img: assets/img/web_scraping.png
@@ -184,7 +183,7 @@ Finally, the database data is exported to a CSV file, sorted by category, price 
 
 <!-- Button to GitHub Repo -->
 <div style="text-align:left; margin-bottom: 20px;">
-  <a href="{{ page.repo }}" target="_blank">
+  <a href=" https://github.com/felixsuarez0727/Data_Extraction_Test" target="_blank">
     <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
       View Repository on GitHub
     </button>

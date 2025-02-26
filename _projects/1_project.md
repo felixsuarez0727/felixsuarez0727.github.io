@@ -1,6 +1,5 @@
 ---
 layout: page
-repo: https://github.com/felixsuarez0727/Conway
 title: Conway's Game of Life
 description: A Python QtPY implementation of Conway's Game of Life.
 img: assets/img/conway.png
@@ -90,7 +89,7 @@ This implementation of Conway's Game of Life offers both simple and complex mode
 
 <!-- Button to GitHub Repo -->
 <div style="text-align:left; margin-bottom: 20px;">
-  <a href="{{ page.repo }}" target="_blank">
+  <a href="https://github.com/felixsuarez0727/Conway" target="_blank">
     <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
       View Repository on GitHub
     </button>

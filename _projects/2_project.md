@@ -1,6 +1,5 @@
 ---
 layout: page
-repo: https://github.com/felixsuarez0727/ArithmeticCalculatorREACT
 title: ArithmeticCalculatorREACT
 description: A web application for performing arithmetic calculations using a REST API.
 img: assets/img/math_symbol.png
@@ -61,7 +60,7 @@ Find the running app here:
 
 <!-- Button to GitHub Repo -->
 <div style="text-align:left; margin-bottom: 20px;">
-  <a href="{{ page.repo }}" target="_blank">
+  <a href="https://github.com/felixsuarez0727/ArithmeticCalculatorREACT" target="_blank">
     <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
       View Repository on GitHub
     </button>
