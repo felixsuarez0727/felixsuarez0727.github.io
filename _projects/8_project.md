@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 4
+title: project 8
+description: an other project with a background image and giscus comments
+img: assets/img/9.jpg
+importance: 8
 category: work
+giscus_comments: false
 ---
 
 Every project has a beautiful feature showcase page.

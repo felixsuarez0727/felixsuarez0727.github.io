@@ -2,7 +2,7 @@
 layout: page
 repo: https://github.com/felixsuarez0727/Conway
 title: Conway's Game of Life
-description: A Python QtPY implementation of Conway's Game of Life
+description: A Python QtPY implementation of Conway's Game of Life.
 img: assets/img/conway.png
 importance: 1
 category: work

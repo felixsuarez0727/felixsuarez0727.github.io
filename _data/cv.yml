@@ -18,6 +18,11 @@
 - title: Education
   type: time_table
   contents:
+    - title: Master in Bioinformatics and AI
+      institution: Universidad Europea de Valencia
+      year: 2024
+      description:
+        - "Studies in Genomics, Prostate Cancer Research, and Artificial Intelligence Applications"
     - title: Master of Digital Business
       institution: Universitat Politècnica de València (UPV)
       year: 2023
@@ -37,22 +42,22 @@
       institution: Universidad de Costa Rica UCR
       year: 2019
       description:
-        - "Thesis: Mapping for translation of the action language to instructions of the object model system"
+        - "Thesis: Mapping for Translation of the Action Language to Instructions of the Object Model System"
     - title: Master's degree with honors in Electromechanics
       institution: Tecnológico de Costa Rica
       year: 2015
       description:
-        - "Thesis: Energy Management Model for the new high-density post-silicon laboratory of Intel Costa Rica"
+        - "Thesis: Energy Management Model for the New High-Density Post-Silicon Laboratory of Intel Costa Rica"
     - title: Licentiate with honors in Electrical Engineering
       institution: University of Costa Rica
       year: 2017
       description:
-        - "Thesis: Integration of the hardware and software of the humanoid robot of the ARCOS-LAB of the EIE"
+        - "Thesis: Integration of the Hardware and Software of the Humanoid Robot of the ARCOS-LAB of the EIE"
     - title: Bachelor in Electrical Engineering
       institution: University of Costa Rica
       year: 2009
       description:
-        - "Thesis: Design and construction of a temperature control system for an egg incubator"
+        - "Thesis: Design and Construction of a Temperature Control System for an Egg Incubator"
 
 
 - title: Experience
@@ -123,39 +128,43 @@
     - title: Google AI Essentials
       year: 2025
       description:
-        - Issued By Google, <a href="https://www.coursera.org/account/accomplishments/verify/71FO817K34SM">Credential - 71FO817K34SM</a> 
-    # - year: 2025
-    #   items:
-    #     - Getting Started with AI on Jetson Nano
-    #     - NVIDIA
-    #     - Jan 2025
-    # - year: 2020
-    #   items:
-    #     - Agile Testing
-    #     - LinkedIn
-    #     - Sep 2020
-    # - year: 2020
-    #   items:
-    #     - CLE C Certified Entry-Level Programmer
-    #     - C++ Institute
-    #     - Sep 2020
-    # - year: 2020
-    #   items:
-    #     - Software Testing/QA
-    #     - LinkedIn
-    #     - Aug 2020
-
-    # - year: 2020
-    #   items:
-    #     - Scrum Product Owner Professional Certificate
-    #     - Aug 2020
-    #     - Aug 2022
-
-    # - year: 2020
-    #   items:
-    #     - PCEP - Certified Entry-Level Python Programmer
-    #     - Python Developer
-    #     - Aug 2020
+        - Issued By Google | <a href="https://www.coursera.org/account/accomplishments/verify/71FO817K34SM">Credential</a> 
+    - title: Getting Started with AI on Jetson Nano
+      year: 2025
+      description:
+        - Issued By Nvidia | <a href="https://learn.nvidia.com/certificates?id=SMMCkJuTvGTGRZ4HPswog">Credential</a> 
+    - title: Infrastructure as Terraform code
+      year: 2024
+      description:
+        - Issued By Universidad Cenfotec | <a href="">Credential</a> 
+    - title: Agile Testing
+      year: 2020
+      description:
+        - Issued By LinkedIn | <a href="https://www.linkedin.com/learning/certificates/1bf1fae0a473deddf7e564d62aed77eed78a6962223d419021683aeb99e44793?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnRNTHs%2FzT%2BeMNYJS6DHMRQ%3D%3D">Credential</a> 
+    - title: CLE(C) Certified Entry-Level Programmer
+      year: 2020
+      description:
+        - Issued By C++ Institute | <a href="https://www.credly.com/badges/7a139967-5ab7-41e4-814a-99f630dd1ff7?source=linked_in_profile">Credential</a> 
+    - title: Lifelong Learning
+      year: 2020
+      description:
+        - Issued By Certiprof | <a href="https://www.credly.com/badges/54e1a17e-31be-4125-9cd1-24421d1e09fc?source=linked_in_profile">Credential</a> 
+    - title: Software Testing/QA
+      year: 2020
+      description:
+        - Issued By LinkedIn | <a href="https://www.linkedin.com/learning/certificates/d6164ed6215d32770f4a5f347bc7b8d8ad68fab59734af85cf0aa1b5397b95c0?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnRNTHs%2FzT%2BeMNYJS6DHMRQ%3D%3D">Credential</a> 
+    - title: Scrum Product Owner Professional
+      year: 2020
+      description:
+        - Issued By Certiprof | <a href="https://www.credly.com/badges/503006ba-ee67-4799-84e1-76df37970758?source=linked_in_profile">Credential</a> 
+    - title: PCEP | Certified Entry-Level Python Programmer
+      year: 2020
+      description:
+        - Issued By Python Institute | <a href="https://www.credly.com/badges/1c9152e4-4659-4e0c-96d1-472a1153d466?source=linked_in_profile">Credential</a> 
+    - title: Scrum Master Professional Certificate | SMPC®
+      year: 2020
+      description:
+        - Issued By Python Certiprof | <a href="https://www.credly.com/badges/2b902c28-8412-44ff-a5e5-32868f9d20ad?source=linked_in_profile">Credential</a> 
 
 
 - title: Technical Skills

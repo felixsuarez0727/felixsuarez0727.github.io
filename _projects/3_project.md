@@ -1,81 +1,192 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+repo: https://github.com/felixsuarez0727/Data_Extraction_Test
+title: Data Extraction Test Project
+description: A project for extracting and processing product data from websites using Scrapy and Python.
+img: assets/img/web_scraping.png
 importance: 3
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+  
+# Extract data Test Exercise
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## 🌲 Project tree
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+```
+📂 app
+|
+├── 📂 core                    # Module with helper functions
+│   ├── 📜 constants.py        # Global constants definitions
+│   ├── 📜 csv_helper.py       # Functions for handling CSV files
+│   ├── 📜 db_helper.py        # Functions for handling Database 
+│   ├── 📜 img_helper.py       # Functions for image processing
+│   └── 📜 scrapper_helper.py  # Functions for the scraper
+├── 📂 database                # Database module
+│   ├── 📂 config              # Database configuration
+│   │   └── 📜 base.py         # Declarative Base configuration for database
+│   ├── 📂 models              # Data models definitions
+│   │   ├── 📜 category.py     # Category model
+│   │   └── 📜 product.py      # Product model
+│   └── 📜 db.py               # Database connection management
+├── 📂 output                  # Output directory for processed data
+│   ├── 📂 images              # Processed images
+│   ├── 📄 data.csv            # Processed CSV file with extracted data
+│   └── 📄 products.db         # Database storing product data
+├── 📂 scrapper                # Web scraper module
+│   ├── 📜 processor.py        # Processor for web pages
+│   └── 📜 spider.py           # Spider definition for web scraping
+├── 📜 main.py                 # Main entry point of the system
+├── 📄 requirements.txt        # Python dependencies
+├── 📜 runners.py              # Scripts for executing main tasks
+├── 📄 scrapy.cfg              # Scrapy configuration file
+└── 📜 settings.py             # Scrapy project settings
 ```
 
-{% endraw %}
+## 🛠️ Workflow
+
+The workflow of the app is divided into small steps.
+- Cleaning of previous files to avoid problems in successive executions.
+- Database creation with the corresponding models.
+- Main data extraction process.
+- Image processing and resizing process.
+- Data extraction process to a CSV file.
+
+
+Extraction process uses 🕷️ Scrapy Framework, a Python framework used for web scraping, it allows to extract, process, and store data from websites efficiently.
+
+## 📝 Notes before run
+
+- The ```run_image_processing()``` function may increase execution time, as it downloads and processes images after data extraction. For quick testing, it is recommended to temporarily disable it in ```main.py```.
+
+
+## 🚀Run the project
+
+There are two alternatives for executing the project, and the choice depends on the needs of the execution environment.
+
+
+### 1️⃣ Running in a virtual environment (Linux)
+
+***Requirements***:``` Python```
+
+#### Steps
+
+Install virtualenv (if you don't have it installed):
+
+```
+pip install venv
+```
+Create a virtual environment in the directory where the project is located.
+
+```
+venv env
+```
+This will create a directory named venv that contains an isolated Python installation.
+
+Activate the virtual environment
+
+```
+. ./env/bin/activate
+```
+
+Go to app folder
+```
+cd app
+```
+
+Once the virtual environment is activated, you must install the necessary dependencies for the project.
+
+```
+pip install -r requirements.txt
+```
+
+With the virtual environment active and the dependencies installed, you canrun the project normally. 
+
+```
+python main.py
+```
+
+When you have finished working on the project, you must deactivate the virtual environment
+
+```
+deactivate
+```
+
+### 2️⃣ Running in a Docker-Compose (Linux/Windows)
+
+***Requirements***: ```Docker``` and ```Docker Compose```
+
+An alternative option is to run the project using Docker Compose. Especially useful if you have compatibility issues with the environment (such as on Windows systems).
+
+
+#### Steps
+
+If you do not have Docker and Docker Compose installed, you will need to install it first.
+
+Build and run the container with Docker Compose.
+
+```
+docker-compose up --build -d
+```
+
+```--build```: Forces the image to rebuild if there are changes in the Dockerfile or project files.
+
+```-d```: Stands for “detached mode”, which allows a container to run in the background.
+
+The container should run the project as defined in the Dockerfile. The project should start automatically.
+The process logs will be printed in the console.
+The results (Data Base, CSV, Images) will be saved in `/app/output`.
+
+#### 🔄 Restart the Process in the Container 
+
+To run the process again on a running container, an interactive session with the container must be started.
+
+```
+docker exec -it astrea-test bash
+```
+
+Then just run the main python script.
+
+```
+python3 main.py
+```
+
+#### 🛑 Stop the container
+
+Stop the container after completion of the tests
+
+```
+docker compose down
+```
+ 
+## ✅ Results
+
+After execution, the database and the resulting CSV file contain 2,950 categorized products and 50 unavailable ones. These unavailable products do not appear in the main categories but are listed separately under "All Products."
+
+As a result, data for 3,000 products is extracted into the database, along with 6 categories representing console names and an additional category for products that could not be categorized.
+
+Additionally, 3,000 images are processed in 3 different sizes, totaling 9,000 images.
+
+Finally, the database data is exported to a CSV file, sorted by category, price (from highest to lowest), and name.
+
+
+
+### Categories
+{% include figure.liquid loading="eager" path="assets/img/project3_categories.png" title="Categories" class="img-fluid_customized rounded z-depth-1" %}
+
+### Products
+{% include figure.liquid loading="eager" path="assets/img/project3_all_products.png" title="Products" class="img-fluid rounded z-depth-1" %}
+
+### Images
+{% include figure.liquid loading="eager" path="assets/img/project3_images.png" title="Images" class="img-fluid_customized rounded z-depth-1" %}
+
+
+<!-- Button to GitHub Repo -->
+<div style="text-align:left; margin-bottom: 20px;">
+  <a href="{{ page.repo }}" target="_blank">
+    <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      View Repository on GitHub
+    </button>
+  </a>
+</div>
