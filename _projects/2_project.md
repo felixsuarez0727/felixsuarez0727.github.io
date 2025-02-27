@@ -54,7 +54,7 @@ The application uses an `.env` file for environment-specific settings, with the 
 
 Find the running app here:
 
-- [BackEnd Documentation](https://img-arithmetic-calculator-restapi-3rzadn5oaa-uc.a.run.app/docs)
+- BackEnd Documentation
 - [FrontEnd WebApp](https://main--react-arithmetic-calculator-2024.netlify.app/)
 
 

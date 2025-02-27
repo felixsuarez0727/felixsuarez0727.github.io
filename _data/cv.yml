@@ -172,21 +172,67 @@
   contents:
     - title: Programming Languages
       items:
-        - C/C++
-        - PHP
-        - Java
         - Python
+        - C/C++
+        - Java
         - C#
-    - title: Technologies
+        - PHP
+        - JavaScript/Typescript
+        - Ruby on Rails
+        - SQL
+        - Bash
+        - HTML
+        - CSS
+        - Matlab
+    - title: Technologies & Tools
       items:
-        - Amazon Web Services (AWS)
-        - Databases
-        - Linux
-        - DevOps
-        - Software Development Life Cycle (SDLC)
-    - title: Areas of Expertise
-      items:
+        - Amazon Web Services (AWS) (EC2, Lambda, S3, RDS, DynamoDB, etc.)
+        - Terraform
+        - Docker & Kubernetes
+        - Git/GitHub
+        - Linux (System Administration & Automation)
+        - CI/CD Pipelines
+        - Virtualization & Virtual Platforms
+        - Robot Operating System (ROS)
         - Cloud Computing
-        - Database Management
-        - Hardware Design
+    - title: Databases
+      items:
+        - MySQL
+        - PostgreSQL
+        - MongoDB
+        - Redis
+    - title: Machine Learning & AI
+      items:
+        - Natural Language Processing (NLP)
+        - LSTM Neural Networks
+        - Transfer Learning
+        - AI Model Deployment
+        - PyTorch
+        - TensorFlow
+        - Data Science
+        - Machine Learning
+    - title: Software Development & Engineering
+      items:
+        - DevOps & Agile Methodologies
+        - Software Development Life Cycle (SDLC)
+        - Full-Stack Development
+        - API Development (REST & GraphQL)
+        - Software Quality Assurance (QA)
+        - Agile Testing
+        - Object-Oriented Programming (OOP)
+    - title: Embedded Systems & Robotics
+      items:
+        - Hardware Design & Virtual Platforms
+        - Low-Level Motion Commands for Robotics
+        - Action Language Mapping
+        - Robotics
+    - title: Other Skills
+      items:
         - System Architecture
+        - Cloud Infrastructure as Code (IaC)
+        - Team Leadership
+        - Scrum
+        - Product Development
+        - Control Systems Design
+        - Continuous Improvement & Learning
+

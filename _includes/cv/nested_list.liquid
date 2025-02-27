@@ -1,13 +1,14 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  <div class="row">
+  <div class="row g-4"> <!-- Increased gap between columns with g-4 -->
     {% for content in entry.contents %}
-      <div class="col-md-4">
-        <li class="list-group-item">
-          <h5 class="font-italic">{{ content.title }}</h5>
+      <div class="col-md-4 d-flex mb-3"> <!-- Added margin-bottom for spacing between rows -->
+        <li class="list-group-item w-100 p-3"> <!-- Padding added inside each list item -->
+          <h5 class="font-italic mb-2">{{ content.title }}</h5> <!-- Space below the title -->
+          
           {% if content.items %}
-            <ul class="subitems">
+            <ul class="subitems ps-3"> <!-- Indent subitems slightly -->
               {% for subitem in content.items %}
-                <li>
+                <li class="py-1"> <!-- Padding between each subitem -->
                   <span class="subitem">{{ subitem }}</span>
                 </li>
               {% endfor %}
