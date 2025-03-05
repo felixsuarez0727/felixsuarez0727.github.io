@@ -8,6 +8,7 @@ category: work
 giscus_comments: false
 ---
 
+---
 # Project Overview
 
 This React WebApp interacts with an Arithmetic Calculator REST API. It supports operations such as:
@@ -21,15 +22,21 @@ This React WebApp interacts with an Arithmetic Calculator REST API. It supports 
 
 The backend serves random strings via a webservice provided by Random.Org.
 
+---
+
 ## Security
 
 Security is ensured using JWT tokens generated during user authentication, with credentials securely stored in the backend database's User table.
+
+---
 
 ## Configuration
 
 The application uses an `.env` file for environment-specific settings, with the `VITE_BACKEND_API` variable specifying the backend API URL. For development, it's set to:
 
 - VITE_BACKEND_API= `http://127.0.0.1:8000/v1/ `
+
+---
 
 ## Running the Development Version
 
@@ -38,6 +45,8 @@ The application uses an `.env` file for environment-specific settings, with the 
 3. Open terminal and navigate to the folder: `CalculatorReact`
 4. Run `npm install`: This will install the dependencies.
 5. Run `npm run dev`: This will run the app.
+
+---
 
 ## Publishing the Production Version
 
@@ -50,6 +59,8 @@ The application uses an `.env` file for environment-specific settings, with the 
 
    The generated files for production will be in the `dist` folder. Deploy the contents of this folder to your hosting service.
 
+---
+
 ## LIVE VERSION
 
 Find the running app here:
@@ -57,6 +68,7 @@ Find the running app here:
 - BackEnd Documentation
 - [FrontEnd WebApp](https://main--react-arithmetic-calculator-2024.netlify.app/)
 
+---
 
 <!-- Button to GitHub Repo -->
 <div style="text-align:left; margin-bottom: 20px;">

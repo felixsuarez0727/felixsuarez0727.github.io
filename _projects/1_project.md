@@ -8,17 +8,23 @@ category: work
 related_publications: false
 ---
 
+---
+# Project Overview
 
 Conway's Game of Life is a cellular automaton simulation. This project features two executable versions:
 
 - `conway_gui.py`: A simple mode for easy execution.
 - `conway_gui_complex.py`: A complex mode with additional configuration options.
 
+---
+
 ## Requirements ❗️
 Ensure you have the following installed:
 
 - Python
 - pip
+
+---
 
 ### Setup Instructions
 1. Create a virtual environment:
@@ -39,6 +45,8 @@ Ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
+---
+
 ### Running the Application
 For the simple mode:
 ```sh
@@ -55,6 +63,8 @@ python conway_gui_complex.py
 
 {% include figure.liquid loading="eager" path="assets/img/conway_complex.gif" title="Complex Conway Mode" class="img-fluid_customized rounded z-depth-1" %}
 
+---
+
 ### Configuration Options
 In `conway_gui_complex.py`, configure the following before starting:
 
@@ -68,6 +78,8 @@ To run:
 2. Click "Draw Matrix."
 3. Click "Start Game."
 4. Click "Stop Game" to halt execution.
+
+---
 
 ## Project Structure 📦
 ```
@@ -84,8 +96,12 @@ conway/
 └── worker.py
 ```
 
+---
+
 ## About
 This implementation of Conway's Game of Life offers both simple and complex modes with enhanced visualization using Python and QtPY. See More on Github!
+
+---
 
 <!-- Button to GitHub Repo -->
 <div style="text-align:left; margin-bottom: 20px;">

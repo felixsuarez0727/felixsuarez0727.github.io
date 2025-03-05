@@ -1,80 +1,163 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Video Categorizer
+description: API designed to store and categorize videos using Google Cloud Video Intelligence.
+img: assets/img/ai_categorization.png
 importance: 4
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div align=left>
+    <a href="#back">⚙️ Backend | </a>
+    <a href="#front">🌈 Frontend</a>
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+<div id="back"></div>
+
+# Backend Python FastAPI
+
+
+<div align=left>
+    <a href="#about-backend"> ❓About  | </a>
+    <a href="#requirements-backend"> 📃 Requirements  | </a>
+    <a href="#run-backend"> 🚀 Run | </a>
+    <a href="#endpoints"> 🔗 Endpoints </a>
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+<div id="about-backend"></div>
 
-{% raw %}
+---
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+#### ❓About 
+
+This project is an API designed to store and categorize videos using ***Google Cloud Video Intelligence***, enabling fast and efficient video labeling and classification with AI.
+
+#### Technologies Used
+- **Python:** Used as the primary language for developing the API backend.
+- **FastAPI:** A Python framework for building fast web APIs.
+- **Google Cloud Intelligence**: Service that analyzes videos using AI, detecting objects, scenes, faces, text, and more.
+- **Google Cloud Storage**: Storage service used for storing videos.
+- **SQLite**: A lightweight, self-contained SQL database engine to store video labels.
+
+---
+
+<div id="requirements-backend"></div>
+
+#### 📃 Requirements 
+
+The following is a list of the requirements necessary to successfully run this project.
+
+##### Docker compose
+
+Docker Compose is used to manage this application. It must be installed separately. You can install it by following the instructions on the official Docker documentation for your operating system. 
+
+[![Install  Compose](https://img.shields.io/badge/Install-Docker_Compose-blue)](https://docs.docker.com/compose/install/)
+
+
+##### Google Cloud Platform Key
+
+A `key.json` file for Google Cloud Platform (GCP) must be generated and placed in the API folder to enable access to services such as the Google Cloud Video Intelligence API.
+
+---
+
+<div id="run-backend"></div>
+
+#### 🚀 Run
+
+To start the project, navigate to the API folder and run Docker Compose.
+```
+docker compose up -d --build
 ```
 
-{% endraw %}
+- `up`: Starts the containers defined in docker-compose.yml.
+- `-d`: Runs the containers in the background (detached mode).
+- `--build`: Forces the rebuild of images before starting the containers.
+
+---
+
+<div id="endpoints"></div>
+
+#### 🔗 Endpoints
+
+
+| **Endpoint**         | **Method** | **Description**                                         | **Responses**                                |
+|----------------------|-----------|---------------------------------------------------------|----------------------------------------------|
+| `/upload`           | `POST`    | Uploads a file to `videobucket-ai` and processes it.   | - `200 OK` – Returns upload result <br> - `400/422` – Validation errors <br> |
+| `/bucket/files`     | `GET`     | Retrieves a list of all files in the bucket.          | - `200 OK` – Returns a list of files        |
+| `/bucket/labels`    | `GET`     | Fetches processed JSON metadata for stored videos.    | - `200 OK` – Returns a list of JSON metadata |
+
+---
+
+<div id="front"></div>
+
+# Frontend JS React
+
+
+<div align=left>
+    <a href="#about-frontend"> ❓About  | </a>
+    <a href="#requirements-frontend"> 📃 Requirements  | </a>
+    <a href="#run-frontend"> 🚀 Run | </a>
+</div>
+
+---
+
+<div id="about-frontend"></div>
+
+#### ❓About 
+
+This project is a React application designed to provide user interaction features for an optimized user experience.
+
+#### Technologies Used
+- **React:** A JavaScript library for building user interfaces.
+- **Vite:** A fast build tool that serves the React app in development.
+- **Javascript:** Programing language for development experience.
+
+---
+
+<div id="requirements-frontend"></div>
+
+#### 📃 Requirements 
+
+##### Node JS
+
+Ensure that Node.js is installed on your system. You can download it from the official website: 
+
+[![Install Node.js](https://img.shields.io/badge/Install-Node.js-blue)](https://nodejs.org/)
+
+##### NPM 
+
+You will require to use `npm` as the package manager.
+
+---
+
+<div id="run-frontend"></div>
+
+#### 🚀 Run
+To start the project in development mode, navigate to the project folder and run the following commands.
+
+
+For install the dependencies.
+
+```
+npm install
+```
+
+For run the project in Development mode.
+
+```
+npm run dev
+```
+
+---
+
+<!-- Button to GitHub Repo -->
+<div style="text-align:left; margin-bottom: 20px;">
+  <a href="https://github.com/felixsuarez0727/video-categorizer" target="_blank">
+    <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      View Repository on GitHub
+    </button>
+  </a>
+</div>

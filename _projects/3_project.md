@@ -7,9 +7,7 @@ importance: 3
 category: work
 ---
 
-
-  
-# Extract data Test Exercise
+---
 
 ## 🌲 Project tree
 
@@ -43,6 +41,8 @@ category: work
 └── 📜 settings.py             # Scrapy project settings
 ```
 
+---
+
 ## 🛠️ Workflow
 
 The workflow of the app is divided into small steps.
@@ -55,15 +55,19 @@ The workflow of the app is divided into small steps.
 
 Extraction process uses 🕷️ Scrapy Framework, a Python framework used for web scraping, it allows to extract, process, and store data from websites efficiently.
 
+---
+
 ## 📝 Notes before run
 
 - The ```run_image_processing()``` function may increase execution time, as it downloads and processes images after data extraction. For quick testing, it is recommended to temporarily disable it in ```main.py```.
 
+---
 
 ## 🚀Run the project
 
 There are two alternatives for executing the project, and the choice depends on the needs of the execution environment.
 
+---
 
 ### 1️⃣ Running in a virtual environment (Linux)
 
@@ -112,6 +116,8 @@ When you have finished working on the project, you must deactivate the virtual e
 deactivate
 ```
 
+---
+
 ### 2️⃣ Running in a Docker-Compose (Linux/Windows)
 
 ***Requirements***: ```Docker``` and ```Docker Compose```
@@ -137,6 +143,8 @@ The container should run the project as defined in the Dockerfile. The project s
 The process logs will be printed in the console.
 The results (Data Base, CSV, Images) will be saved in `/app/output`.
 
+---
+
 #### 🔄 Restart the Process in the Container 
 
 To run the process again on a running container, an interactive session with the container must be started.
@@ -151,6 +159,8 @@ Then just run the main python script.
 python3 main.py
 ```
 
+---
+
 #### 🛑 Stop the container
 
 Stop the container after completion of the tests
@@ -158,7 +168,9 @@ Stop the container after completion of the tests
 ```
 docker compose down
 ```
- 
+
+--- 
+
 ## ✅ Results
 
 After execution, the database and the resulting CSV file contain 2,950 categorized products and 50 unavailable ones. These unavailable products do not appear in the main categories but are listed separately under "All Products."
@@ -169,7 +181,7 @@ Additionally, 3,000 images are processed in 3 different sizes, totaling 9,000 im
 
 Finally, the database data is exported to a CSV file, sorted by category, price (from highest to lowest), and name.
 
-
+---
 
 ### Categories
 {% include figure.liquid loading="eager" path="assets/img/project3_categories.png" title="Categories" class="img-fluid_customized rounded z-depth-1" %}
@@ -180,6 +192,7 @@ Finally, the database data is exported to a CSV file, sorted by category, price 
 ### Images
 {% include figure.liquid loading="eager" path="assets/img/project3_images.png" title="Images" class="img-fluid_customized rounded z-depth-1" %}
 
+---
 
 <!-- Button to GitHub Repo -->
 <div style="text-align:left; margin-bottom: 20px;">
