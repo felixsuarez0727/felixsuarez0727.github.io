@@ -1,80 +1,164 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: challenger-dev-python
+description: Traffic offenses system with an admin interface and API for report generation.
+img: assets/img/traffic_offenses_project.png
 importance: 6
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+----
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# Overview
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project implements a traffic offenses registration system in Python using the Django framework. The system consists of an administrative interface for managing persons, vehicles, and officers, as well as an API that allows an application used by police officers to upload offenses for vehicles and generate reports.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+---
+
+## Installation
+
+1. Clone this repository:
+
+    ```
+    git clone https://github.com/felixsuarez0727/challenger-dev-python.git
+    ```
+
+2. Create and activate a virtual environment:
+
+    ```
+    python -m venv challenger-dev-venv
+    source challenger-dev-venv/bin/activate
+    ```
+
+    On Windows use
+
+    ```
+    challenger-dev-venv\Scripts\activate
+    ```
+
+3. Install the project dependencies:
+
+    ```
+    pip install -r requirements.txt
+    ```
+---
+
+## Running the Project
+
+1. Activate your virtual environment if you haven't already:
+
+    ```
+    source challenger-dev-venv/bin/activate
+    ```
+    
+    On Windows use
+
+    ```
+    challenger-dev-venv\Scripts\activate
+    ```
+
+2. Navigate to the project directory:
+
+    ```
+    cd traffic-offences
+    ```
+
+3. Prepare database:
+
+    ```
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+4. Create  a superuser (Will be needed for admin access):
+
+    ```
+    python manage.py createsuperuser
+    ```
+
+    With credentials
+
+    ```
+    **Username:** superusertraffic
+    **Password:** superuserpass
+    ```
+
+5. Run the application:
+
+    ```
+    python manage.py runserver
+    ```
+
+6. Access the administrative interface in your web browser:
+
+    ```
+    http://localhost:8000/admin
+    ```
+
+7. Enter the following credentials to access the administrative interface:
+
+    - **Username:** superusertraffic
+    - **Password:** superuserpass
+
+{% include figure.liquid loading="eager" path="assets/img/administrationPanel.png" title="administrationPanel" class="img-fluid rounded z-depth-1" %}
+
+After logging in, you can start registering people, vehicles and officers.
+
+{% include figure.liquid loading="eager" path="assets/img/registrationPanel-1.png" title="registrationPanel-1" class="img-fluid rounded z-depth-1" %}
+
+{% include figure.liquid loading="eager" path="assets/img/registrationPanel-2.png" title="registrationPanel-2" class="img-fluid rounded z-depth-1" %}
+
+---
+
+## API Usage
+Before you start using the endpoints, make sure you have entered records in the administration panel.
+
+---
+
+### Generate Tokens
+To generate API access tokens, you must send a JSON with `username` and `password` for an officer account. You can send a POST request to the URL:`http://localhost:8000/api/v1/generar-token` or use the following `curl` command to get the token:
+
+    ```
+    curl -X POST http://localhost:8000/api/v1/generar-token -H "Content-Type: application/json" -d "{\"username\":\"TestUser\", \"password\":\"testuserpass\"}"
+    ```
+
+Your access token will be the value of the 'access' attribute.
+
+{% include figure.liquid loading="eager" path="assets/img/generateToken.png" title="generateToken" class="img-fluid rounded z-depth-1" %}
+
+Be sure to copy it in full
+
+---
+
+### Upload Offense
+This endpoint requires authorization using a Bearer token. To upload an offense, attach the token in the Authorization header of the POST request:
+You can access the through endpoint
+
+    ```
+    http://localhost:8000/api/v1/cargar_infraccion
+    ```
+
+{% include figure.liquid loading="eager" path="assets/img/trafficViolation.png" title="trafficViolation" class="img-fluid rounded z-depth-1" %}
+
+---
+
+### Generate Report
+This endpoint does not require authorization and receives an email parameter to generate a report for the specified person:
+You can access the through endpoint
+
+    ```
+    http://localhost:8000/api/v1/generar_reporte?email=example@example.com
+    ```
+
+{% include figure.liquid loading="eager" path="assets/img/report-1.png" title="report-1" class="img-fluid rounded z-depth-1" %}
+
+---
+
+<!-- Button to GitHub Repo -->
+<div style="text-align:left; margin-bottom: 20px;">
+  <a href="https://github.com/felixsuarez0727/challenger-dev-python" target="_blank">
+    <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      View Repository on GitHub
+    </button>
+  </a>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

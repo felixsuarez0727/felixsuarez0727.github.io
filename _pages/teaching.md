@@ -10,7 +10,7 @@ nav_order: 3
 ## University of Costa Rica (UCR)  
 **Senior Lecturer, Departments of Physics, Computer Science, and Electrical Engineering (2017-2023)**
 
-### Course Portfolio  
+---
 
 #### Department of Physics  
 - **General Physics I**: Core undergraduate physics curriculum for engineering disciplines, focusing on fundamental physics principles and engineering applications. Developed problem-solving methodologies to enhance student understanding.  
