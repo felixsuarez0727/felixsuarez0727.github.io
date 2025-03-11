@@ -1,81 +1,292 @@
 ---
 layout: page
-title: project 7
-description: with background image
-img: assets/img/4.jpg
+title: HCC Extraction Project
+description: An automated system for extracting HCC-relevant conditions from clinical progress notes using AI.
+img: assets/img/hcc_Extraction_Project.png
 importance: 7
 category: work
-related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+---
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Overview
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project implements an AI-based solution that automates the extraction of medical conditions and their associated codes from clinical progress notes, determining which are relevant for HCC (Hierarchical Condition Category). Using Vertex AI Gemini 1.5 Flash and LangGraph, the system transforms a tedious and error-prone process into an efficient workflow, allowing healthcare professionals to focus more on patient care.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+---
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## System Architecture
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+The project follows a layered architecture that clearly separates:
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+1. **Condition extraction**: Identifies medical conditions and their codes from progress notes
+2. **HCC relevance evaluation**: Determines which of the extracted conditions are relevant for HCC
+3. **LangGraph orchestration**: Manages the workflow between different components
 
-{% raw %}
+---
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+### Main components:
+
+- `src/main.py`: Main entry point of the application
+- `src/agent.py`: Defines the agent configuration
+- `src/extraction/extractor.py`: Handles condition extraction from notes
+- `src/evaluation/evaluator.py`: Evaluates the HCC relevance of extracted conditions
+- `src/utils/`: Contains utilities for data handling, logging, and constants
+
+---
+
+## Prerequisites
+- Poetry for development (optional)
+- Docker and Docker Compose
+- Google Cloud service account with access to Vertex AI
+- Google Cloud credentials file (JSON)
+
+---
+
+## Configuration
+
+### Google Cloud Credentials
+
+To access Vertex AI Gemini 1.5 Flash, you need to configure a credentials file:
+
+1. Create a service account in Google Cloud Console with access to Vertex AI
+2. Generate and download a JSON key file for the service account
+3. Place the credentials file in project root `credentials.json`
+
+#### Set Required Google Cloud Credentials Environment Variable on Windows
+
+Follow these steps:
+
+1. Open the Control Panel.
+
+2. Search for Environment Variables.
+
+3. Click the Edit Environment Variables button.
+
+4. In the System variables section, click New.
+
+5. In the Variable name field, enter GOOGLE_APPLICATION_CREDENTIALS.
+
+6. In the Variable value field, enter the full path to your credentials file, for example:
+
+	``` bash
+	C:\path\to\your\credentials.json
+	```
+
+7. Click OK and close the settings windows.
+
+8. Verify the Environment Variable is Set Correctly
+
+	Powershell
+	``` bash
+	$env:GOOGLE_APPLICATION_CREDENTIALS
+	```
+
+	CMD
+	``` bash
+	echo %GOOGLE_APPLICATION_CREDENTIALS%
+	```
+
+#### Set Required Google Cloud Credentials Environment Variable on  Linux
+
+Follow these steps:
+
+1. Open your terminal.
+
+2. Edit your shell's profile configuration file:
+
+
+	```
+	nano ~/.bashrc
+	```
+
+	Add the following configuration
+
+	```
+	export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/credentials.json
+	```
+
+3. Save the file and exit the editor (in nano, press Ctrl + X, then press Y, and then Enter).
+
+4. Reload the profile to apply the changes:
+
+	```
+	source ~/.bashrc
+	```
+
+5. Verify the Environment Variable is Set Correctly
+	```
+	echo $GOOGLE_APPLICATION_CREDENTIALS
+	```
+
+---
+
+## Installation and Execution
+
+### Using Docker (recommended)
+
+1. Build and run the Docker container:
+
+```bash
+docker-compose up --build
 ```
 
-{% endraw %}
+This will automatically process all progress notes in `data/input/` and save the results in `data/output/`.
+
+2. To access the processed results:
+
+```bash
+ls -la data/output/
+```
+
+### Manual Installation (development)
+
+1. Set up the environment using Poetry:
+
+```bash
+# Install Poetry if not already installed
+pip install poetry
+
+# Install dependencies
+poetry install
+```
+
+2. Run the application:
+
+```bash
+# Using Poetry
+poetry run python ./src/main.py
+```
+
+---
+
+## Usage
+
+### Processing Progress Notes
+
+1. Place clinical progress notes in text format in the `data/input/` directory
+2. Run the application following the instructions above
+3. Review the processed results in `data/output/`
+
+### Input/Output Format
+
+- **Input**: Text files with clinical progress notes
+- **Output**: Files with extracted conditions, codes, and their HCC relevance
+
+Example output:
+
+```bash
+Patient Information:
+	Name: ROOB, NATHANIAL
+	Age: 84
+	DOB: 06/17/1940
+	Insurance #: 123456789
+
+Medical Conditions:
+	HCC Relevant:
+	  - Hyperglycemia due to type 2 diabetes mellitus (Code: E11.65)
+	  - Chronic obstructive lung disease (Code: J44.9)
+	  - Chronic systolic heart failure (Code: I50.22)
+	  - Chronic kidney disease stage 4 (Code: N18.4)
+	  - Morbid obesity (Code: E66.01)
+	HCC Not Relevant:
+	  - Gastroesophageal reflux disease (Code: K21.9)
+	  - Essential hypertension (Code: I10)
+```
+
+---
+
+## Running the LangGraph Development Web App
+
+To start the LangGraph development interface:
+
+```bash
+# Using Poetry
+poetry run langgraph dev
+```
+
+This will start the web application where you can:
+
+- Visualize the workflow graph
+- Test different inputs
+- Inspect the state at each step of the process
+- Debug the behavior of nodes
+
+---
+
+## Running Tests
+
+To run the unit tests:
+
+```bash
+# Using Poetry
+poetry run pytest
+```
+
+---
+
+## Project Structure
+
+```
+├── 📄 .gitignore                  # Files and directories ignored by Git
+├── 📄 credentials.json            # Google Cloud credentials (do not include in repo)
+├── 📁 data                 	   # Input, output, and reference data
+│   ├── 📁 input            	   # Progress notes to process
+│   ├── 📁 output          		   # Processed results
+│   └── 📁 reference       	   	   # Reference data (HCC codes)
+├── 📁 src                         # Main application directory
+│   ├── 📄 agent.py                # AI agent and Vertex AI configuration
+│   ├── 📄 main.py                 # Main entry point
+|   ├── 📁 evaluation       	   # HCC relevance evaluation
+│   ├── 📁 extraction       	   # Condition extraction
+│   ├── 📁 langgraph        	   # LangGraph implementation
+│   ├── 📁 models           	   # Models and data structures
+│   └── 📁 utils            	   # Utilities and tools
+├── 📁 tests                 	   # Unit tests
+├── 📄 docker-compose.yaml         # Docker Compose configuration
+├── 📄 dockerfile                  # Docker container definition
+├── 📄 langgraph.json              # LangGraph configuration
+├── 📄 poetry.lock                 # Dependency version lock
+├── 📄 pyproject.toml              # Poetry and project configuration
+```
+
+---
+
+## Dockerfile
+
+The Dockerfile is configured to:
+
+1. Build an environment with all necessary dependencies
+2. Automatically process all notes in the input directory
+3. Store the results in a mounted volume
+
+---
+
+## Methodology and Approach
+
+### Condition Extraction
+
+The solution specifically looks for the "assessment/plan" section in progress notes, where medical conditions are listed. We use Gemini 1.5 Flash to:
+
+1. Identify and extract this specific section
+2. Recognize medical conditions and their associated codes
+3. Structure the information
+
+### HCC Relevance Evaluation
+
+The evaluation uses:
+
+1. Reference database of HCC-relevant codes
+2. Comparison logic to determine relevance
+3. Calculation of confidence scores for each condition
+
+---
+
+<!-- Button to GitHub Repo -->
+<div style="text-align:left; margin-bottom: 20px;">
+  <a href="https://github.com/felixsuarez0727/hcc-extraction" target="_blank">
+    <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      View Repository on GitHub
+    </button>
+  </a>
+</div>
