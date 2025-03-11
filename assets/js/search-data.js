@@ -430,9 +430,9 @@ ninja.data = [{
           description: "Traffic offenses system with an admin interface and API for report generation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-hcc-extraction-project",
+          title: 'HCC Extraction Project',
+          description: "An automated system for extracting HCC-relevant conditions from clinical progress notes using AI.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-project-8",
