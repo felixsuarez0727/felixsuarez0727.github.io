@@ -18,13 +18,18 @@
 - title: Education
   type: time_table
   contents:
+    - title: PhD in Physics - AI and Microelectronics
+      institution: University of Seville
+      year: 2025
+      description:
+        - "Studies in Physics, AI Applications and Microelectronics"
     - title: Master in Bioinformatics and AI
-      institution: Universidad Europea de Valencia
+      institution: European University of Valencia
       year: 2024
       description:
         - "Studies in Genomics, Prostate Cancer Research, and Artificial Intelligence Applications"
     - title: Master of Digital Business
-      institution: Universitat Politècnica de València (UPV)
+      institution: Polytechnic University of Valencia
       year: 2023
       description:
         - "Digital Business, Management, Marketing, and Related Support Services"
@@ -34,17 +39,17 @@
       description:
         - "Business Administration and Management"
     - title: Academic Master in Computer Science
-      institution: Universidad de Costa Rica UCR
+      institution: University of Costa Rica
       year: 2021
       description:
         - "Security, Natural Language Processing, Robotics, and Machine Learning"
     - title: Academic Master in Electrical Engineering
-      institution: Universidad de Costa Rica UCR
+      institution: University of Costa Rica
       year: 2019
       description:
         - "Thesis: Mapping for Translation of the Action Language to Instructions of the Object Model System"
     - title: Master's degree with honors in Electromechanics
-      institution: Tecnológico de Costa Rica
+      institution: Technological Institute of Costa Rica
       year: 2015
       description:
         - "Thesis: Energy Management Model for the New High-Density Post-Silicon Laboratory of Intel Costa Rica"
@@ -114,13 +119,6 @@
       description:
         - Analysis of atomic manipulation tasks in a kitchen and collaborative workshop for humanoid robots
 
-# - title: Certifications
-#   type: time_table
-#   contents:
-#     - year: 2020
-#       items:
-#         - Agile Testing (LinkedIn)
-#         - CLE C Certified Entry-Level Programmer (C++ Institute)
 
 - title: Certifications
   type: time_table

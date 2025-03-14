@@ -1,81 +1,298 @@
 ---
 layout: page
-title: project 8
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
+title: AI Phone Assistant
+description: AI-powered phone assistant using LLMs and Twilio for small business calls.
+img: assets/img/Phone_Assistant_Project.png
 importance: 8
 category: work
 giscus_comments: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+---
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## 📋 Overview
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<br/>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+This project implements an intelligent phone assistant that allows small businesses (such as restaurants) to offer automated assistance to their customers via phone calls. The system:
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- Understands natural language using LLMs
+- Processes phone calls with Twilio
+- Maintains conversation context
+- Provides coherent and natural responses
+- Assists with information and reservations
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Ideal for small businesses looking to improve accessibility without the complexity of traditional IVR systems.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## 🚀 Features
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+<br/>
+
+- **24/7 Support**: Responds to calls even outside of business hours  
+- **Natural Language Understanding**: Understands conversational language queries  
+- **Context Retention**: Remembers previous information during the conversation  
+- **Booking Management**: Can gather information for bookings  
+- **Easy Implementation**: Minimal setup required  
+- **Integration with Existing Systems**: Can connect with booking systems  
+- **Enhanced Accessibility**: Especially useful for seniors or those with technological limitations  
+
+---
+
+## 🔧 Technologies
+
+<br/>
+
+- **TypeScript**: Main programming language  
+- **Hono**: Lightweight and fast web framework  
+- **OpenAI API**: Language models  
+- **Twilio API**: Telephony integration  
+- **Pino**: Logging system 
+
+---
+
+## ⚙️ Requirements
+
+<br/>
+
+- Node.js 16.x or higher
+- Twilio account with a phone number
+- OpenAI API key
+- Stable internet connection
+
+---
+
+## 📥 Installation
+
+<br/>
+
+1. Clone the repository:
+```bash
+git clone https://github.com/felixsuarez0727/Telephone-Assistant.git
+cd Telephone-Assistant
 ```
 
-{% endraw %}
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create a `.env` file based on `.env.example`:
+```bash
+cp .env.example .env
+```
+
+4. Update the `.env` file with your credentials:
+
+<br/>
+
+```
+# OpenAI API configuration
+OPENAI_API_KEY=your_openai_api_key
+OPENAI_MODEL=gpt-3.5-turbo
+
+# Twilio configuration
+TWILIO_ACCOUNT_SID=your_twilio_account_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_PHONE_NUMBER=your_twilio_phone_number
+
+# Server configuration
+PORT=3000
+NODE_ENV=development
+
+# Restaurant specific configuration
+RESTAURANT_NAME="Your Restaurant"
+RESTAURANT_OPENING_HOURS="12:00 - 22:00"
+MAX_RESERVATION_SIZE=10
+```
+
+---
+
+## 🏃‍♂️ Execution
+
+<br/>
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Production
+
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 🌐 Twilio Configuration
+
+<br/>
+
+1. Go to your [Twilio Dashboard](https://www.twilio.com/console)
+2. Configure a webhook for your phone number:
+   - Webhook URL:  `https://your-domain.com/api/incoming-call`
+   - HTTP Method: `POST`
+
+---
+
+## 🔄 Project Structure
+
+<br/>
+
+```
+phone-assistant/
+│
+├── src/
+│   ├── index.ts              # Main server entry point
+│   ├── config/
+│   │   ├── openai.ts         # OpenAI client configuration
+│   │   ├── twilio.ts         # Twilio configuration
+│   │   └── constants.ts      # System constants and prompts
+│   │
+│   ├── controllers/
+│   │   ├── callController.ts # Controller for handling calls
+│   │   ├── reservationController.ts # Controller for reservations
+│   │   └── miscController.ts # Controller for miscellaneous functions
+│   │
+│   ├── services/
+│   │   ├── openaiService.ts  # Services for OpenAI communication
+│   │   ├── twilioService.ts  # Services for generating TwiML
+│   │   └── stateService.ts   # Conversation state management
+│   │
+│   ├── utils/
+│   │   ├── logger.ts         # Logging utilities
+│   │   └── helpers.ts        # Helper functions
+│   │
+│   ├── types/
+│   │   └── index.ts          # TypeScript type definitions
+│   │
+│   └── routes/
+│       └── index.ts          # Server route definitions
+│
+├── tests/
+│   ├── unit/                 # Unit tests
+│   └── integration/          # Integration tests
+│
+├── docs/                     # Documentation
+│
+└── public/                   # Static files
+```
+
+---
+
+## 📊 Endpoints
+
+<br/>
+
+### Telephony
+- `POST /api/incoming-call`: Endpoint for incoming calls
+- `POST /api/respond`: Endpoint for processing user responses
+
+<br/>
+
+### Reservations (optional)
+- `POST /api/reservations`: Create a new reservation
+- `GET /api/reservations`: List existing reservations
+
+<br/>
+
+### System
+- `GET /api/health`: Check system status
+- `GET /api/stats`: Retrieve statistics
+- `GET /api/config`: Retrieve current configuration
+- `GET /api/echo`: Test endpoint for debugging
+
+---
+
+## 🧪 Testing
+
+<br/>
+
+### Run Tests
+```bash
+npm test
+```
+
+<br/>
+
+### Unit Tests
+```bash
+npm run test:unit
+```
+<br/>
+
+### Integration Tests
+```bash
+npm run test:integration
+```
+
+---
+
+## 🔍 Monitoring
+
+<br/>
+
+The system includes a `/api/health` endpoint that allows checking the status of all components. You can integrate it with monitoring services such as Uptime Robot or Pingdom.
+
+---
+
+## 📈 Expected Results
+
+<br/>
+
+Based on recent studies:
+- Voice comprehension: ~90% under ideal conditions
+- Conversational coherence: ~80%
+- Information accuracy: ~75%
+- Customer satisfaction: ~70%
+
+---
+
+## 🛠️ Customization
+
+<br/>
+
+### System Prompt
+
+To modify the assistant’s behavior, edit the system prompt in `src/config/constants.ts`:
+
+```typescript
+export const SYSTEM_PROMPT = `You are a phone assistant for...`;
+```
+
+---
+
+## 🚧 Known Limitations
+
+<br/>
+
+- Cannot transfer calls to human operators (in this version)
+- Speech recognition may struggle in noisy environments
+- Dependent on OpenAI and Twilio service availability
+
+---
+
+## 🔜 Future Improvements
+
+<br/>
+
+- Integration with CRM systems
+- Multi-language support
+- Sentiment analysis
+- Human operator call transfers
+- Web-based admin panel
+
+---
+
+<!-- Button to GitHub Repo -->
+<div style="text-align:left; margin-bottom: 20px;">
+  <a href="https://github.com/felixsuarez0727/Telephone-Assistant" target="_blank">
+    <button id="github-repo-button" style="padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      View Repository on GitHub
+    </button>
+  </a>
+</div>
