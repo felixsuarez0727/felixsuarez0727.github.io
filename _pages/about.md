@@ -25,7 +25,7 @@ social: true  # includes social icons at the bottom of the page
 ## Experience
 - **Software Developer** – [Botco.ai](https://botco.ai) (2020–2024)
 - **Software Developer** – [Intel Corporation](https://www.intel.com) (2012–2020)
-- **Radar Maintenance Engineer** – [COCESNA](https://www.cocesna.org) (2009–2012)
+- **Radar Maintenance Engineer** – [COCESNA](https://cocesna.org) (2009–2012)
 - **Professor & Researcher** – University of Costa Rica (2012–2023) 
 
 ---
