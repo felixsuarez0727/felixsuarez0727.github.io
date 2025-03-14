@@ -435,9 +435,9 @@ ninja.data = [{
           description: "An automated system for extracting HCC-relevant conditions from clinical progress notes using AI.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
+            },},{id: "projects-ai-phone-assistant",
+          title: 'AI Phone Assistant',
+          description: "AI-powered phone assistant using LLMs and Twilio for small business calls.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
             },},{id: "projects-project-9",
