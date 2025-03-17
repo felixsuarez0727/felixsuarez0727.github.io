@@ -66,3 +66,14 @@ nav_order: 3
 - Pioneered robotics education in Central America through the Arcosbot project.
 
 For research publications and additional academic contributions, please visit the Publications section.
+
+---
+
+## Lecture Videos
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-row-gap: 20px; grid-column-gap: 20px; justify-items: center;">
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/KMS-z6LotiQ" frameborder="0" allowfullscreen></iframe>
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/6sAZwUfqWIQ" frameborder="0" allowfullscreen></iframe>
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/t-30AZNsbk4" frameborder="0" allowfullscreen></iframe>
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/SgG8p1O5EXo" frameborder="0" allowfullscreen></iframe>
+</div>
