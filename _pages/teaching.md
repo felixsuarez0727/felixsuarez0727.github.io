@@ -71,9 +71,24 @@ For research publications and additional academic contributions, please visit th
 
 ## Lecture Videos
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-row-gap: 20px; grid-column-gap: 20px; justify-items: center;">
-    <iframe width="400" height="225" src="https://www.youtube.com/embed/KMS-z6LotiQ" frameborder="0" allowfullscreen></iframe>
-    <iframe width="400" height="225" src="https://www.youtube.com/embed/6sAZwUfqWIQ" frameborder="0" allowfullscreen></iframe>
-    <iframe width="400" height="225" src="https://www.youtube.com/embed/t-30AZNsbk4" frameborder="0" allowfullscreen></iframe>
-    <iframe width="400" height="225" src="https://www.youtube.com/embed/SgG8p1O5EXo" frameborder="0" allowfullscreen></iframe>
+<style>
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+        justify-items: center;
+    }
+    .video-grid iframe {
+        width: 100%;
+        max-width: 560px; /* Keeps it reasonable on large screens */
+        aspect-ratio: 16/9; /* Ensures proper aspect ratio */
+    }
+</style>
+
+<div class="video-grid">
+    <iframe src="https://www.youtube.com/embed/KMS-z6LotiQ" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/6sAZwUfqWIQ" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/t-30AZNsbk4" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/SgG8p1O5EXo" frameborder="0" allowfullscreen></iframe>
 </div>
+
