@@ -73,28 +73,28 @@
       year: 2020 - 2024
       description:
         - Specialized in Databases and Amazon Web Services (AWS)
-        - Development of cloud-based software solutions
+        - Development of Cloud-based Software Solutions
     - title: Software Developer
       institution: Intel Corporation
       year: 2012 - 2020
       description:
-        - Software Developer in Hardware Design organization
+        - Software Developer in a VLSI Design Organization
         - Worked in Virtual Platform Group (VPG)
-        - Development of virtual platform solutions
+        - Development of Hardware Emulations Tools
     - title: Radar Maintenance Engineer
       institution: COCESNA (Central American Corporation of Air Navigation Services)
       year: 2009 - 2012
       description:
         - Specialized in Linux systems
-        - International organization dedicated to air navigation services
-        - Maintenance and optimization of radar systems
+        - International Organization Dedicated to Air Navigation Services
+        - Maintenance and Optimization of Radar Systems
     - title: Professor & Researcher
       institution: University of Costa Rica
       year: 2012 - 2023
       description:
-        - Professor and researcher in relevant fields
-        - Conducted research and mentored students
-        - Contributed to academic publications and projects
+        - Professor and Researcher in Relevant Fields
+        - Conducted Research and Mentored Students
+        - Contributed to Academic Publications and Projects
 
 
 - title: Publications
@@ -103,21 +103,22 @@
     - title: BETO Emotion Analysis of Facebook Users Reacting to Major Media Outlets in Costa Rica
       year: 2021
       description:
-        - Implemented emotion analysis service for Spanish Facebook posts using Transfer Learning and BETO, applying natural language processing techniques.
+        - Implemented Emotion Analysis Service for Spanish Facebook Posts Using Transfer Learning and BETO, Applying Natural Language Processing Techniques.
         
-    - title: Robotic architecture to map an action language to low-level motion commands for skillful manipulation
+    - title: Robotic Architecture to Map an Action Language to Low-Level Motion Commands for Skillful Manipulation
       year: 2020
       description:
         - Developed robotic architecture for skillful manipulation, including the creation of action language mapping systems.
+
     - title: Automatic Translation of Spanish Natural Language Commands to Control Robot Commands Based on LSTM Neural Network
       year: 2019
       description:
-        - Utilized an LSTM neural network to translate Spanish natural language commands into Robot Control Language (RCL), achieving low loss with a manually generated corpus.
-        
+        - Utilized an LSTM Neural Network to Translate Spanish Natural Language Commands into Robot Control Language (RCL), Achieving Low Loss with a Manually Generated Corpus.
+  
     - title: Analysis of Atomic Manipulation Tasks in Human-Shared Scenarios for a Humanoid Robot
       year: 2018
       description:
-        - Analysis of atomic manipulation tasks in a kitchen and collaborative workshop for humanoid robots
+        - Analysis of Atomic Manipulation Tasks in a Kitchen and Collaborative Workshop for Humanoid Robots.
 
 
 - title: Certifications
