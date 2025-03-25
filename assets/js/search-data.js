@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-academium",
+          title: "Academium",
+          description: "Explore a selection of final graduation projects, showcasing academic research and innovation.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/academium/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "",
@@ -440,9 +447,9 @@ ninja.data = [{
           description: "AI-powered phone assistant using LLMs and Twilio for small business calls.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+            },},{id: "projects-health-care-backend-api",
+          title: 'Health Care Backend API',
+          description: "A REST API for managing patient records and authentication in a Health Care project.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
