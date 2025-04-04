@@ -9,7 +9,7 @@ title: About
 profile:
   align: 
   image: profile_picture.jpg
-  image_cicular: false # crops the image to make it circular
+  image_cicular: false 
   more_info: >
     <p> Software Engineer </p> <br/>
     <p>San José, Santa Ana </p> <br/>
