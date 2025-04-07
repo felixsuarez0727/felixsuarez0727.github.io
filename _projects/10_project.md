@@ -131,7 +131,7 @@ If you encounter any issues:
 1. Verify your authentication credentials
 2. Ensure your Fabric Capacity is properly provisioned
 3. Check the capacity name in your `terraform.tfvars` file
-4. Refer to the [Troubleshooting guide](https://learn.microsoft.com/en-us/fabric/developer/terraform/fabric-terraform-troubleshooting) in the official documentation
+4. Refer to the [Troubleshooting guide](https://registry.terraform.io/providers/microsoft/fabric/latest/docs) in the official documentation
 
 ---
 
