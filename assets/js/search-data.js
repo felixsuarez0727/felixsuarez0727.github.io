@@ -407,7 +407,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-conway-39-s-game-of-life",
+          section: "News",},{id: "projects-microsoft-amp-terraform",
+          title: 'Microsoft &amp;amp; Terraform',
+          description: "This project provisions and manages Microsoft Fabric resources locally with Terraform.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_project/";
+            },},{id: "projects-conway-39-s-game-of-life",
           title: 'Conway&amp;#39;s Game of Life',
           description: "A Python QtPY implementation of Conway&#39;s Game of Life.",
           section: "Projects",handler: () => {
