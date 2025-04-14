@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 post-title: 
 nav: true
-nav_order: 5
+nav_order: 6
 # cv_pdf: example_pdf.pdf # you can also use external links here
 description: 
 toc:

@@ -18,11 +18,11 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD in Physics - AI and Microelectronics
-      institution: University of Seville
-      year: 2025
-      description:
-        - "Studies in Physics, AI Applications and Microelectronics"
+    # - title: PhD in Physics - AI and Microelectronics
+    #   institution: University of Seville
+    #   year: 2025
+    #   description:
+    #     - "Studies in Physics, AI Applications and Microelectronics"
     - title: Master in Bioinformatics and AI
       institution: European University of Valencia
       year: 2024

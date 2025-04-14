@@ -12,8 +12,6 @@ profile:
   image_cicular: false 
   more_info: >
     <p> Software Engineer </p> <br/>
-    <p>San José, Santa Ana </p> <br/>
-    <p>Costa Rica, 10101 </p> 
 
 
 news: false  # includes a list of news items
