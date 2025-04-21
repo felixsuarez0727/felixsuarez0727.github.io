@@ -405,7 +405,7 @@ nav_order: 5
   <div class="year-marker" style="top: 5%;">
     <div class="year-label">2005</div>
   </div>
-  <div class="year-marker" style="top: 20%;">
+  <div class="year-marker" style="top: 20.5%;">
     <div class="year-label">2010</div>
   </div>
   <div class="year-marker" style="top: 25%;">
@@ -437,11 +437,11 @@ nav_order: 5
   <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
-      <div class="timeline-period period-color-1">2005 - 2010</div>
-      <h3>Bachelor's Degree in Chemistry</h3>
+      <div class="timeline-period period-color-1">2005 - 2009</div>
+      <h3>Bachelor's Degree Electrical Engineering </h3>
       <div class="institution-container">
-        <div class="institution">University of Valencia</div>
-        <span class="institution-tooltip">University of Valencia, Spain</span>
+        <div class="institution">University of Costa Rica</div>
+        <span class="institution-tooltip">University of Costa Rica, Costa Rica</span>
       </div>
     </div>
   </div>
