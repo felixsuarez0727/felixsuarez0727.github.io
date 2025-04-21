@@ -438,7 +438,7 @@ nav_order: 5
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-1">2005 - 2009</div>
-      <h3>Bachelor's Degree Electrical Engineering </h3>
+      <h3>Bachelor's Degree in Electrical Engineering </h3>
       <div class="institution-container">
         <div class="institution">University of Costa Rica</div>
         <span class="institution-tooltip">University of Costa Rica, Costa Rica</span>
