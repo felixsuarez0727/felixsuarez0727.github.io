@@ -121,9 +121,63 @@ horizontal: true
                     </div>
                 </div>
             </div>
+
+                        <!-- New Project: Elva Analytics Copyright Registration -->
+            <div class="card border-0 shadow-lg mb-5" style="background-color: var(--global-card-bg-color);">
+                <div class="card-body p-0">
+                    <div class="project-image-container">
+                        {% include figure.liquid 
+                            loading="lazy" 
+                            path="assets/img/elva-analytics.png" 
+                            title="Elva Analytics" 
+                            class="img-fluid w-100 object-cover rounded-top" 
+                        %}
+                    </div>
+                    <div class="p-4" style="color: var(--global-text-color);">
+                        <div class="mb-3">
+                            <span class="badge mb-3" style="background-color: var(--global-theme-color);">
+                                Copyright Registration
+                            </span>
+                            <h2 class="h3 mb-3" style="color: var(--global-theme-color);">
+                                Elva Analytics
+                            </h2>
+                            <h3 class="h5 mb-3">
+                                Intellectual Property Registration
+                            </h3>
+
+                            <div class="project-metadata mb-4">
+                                <p class="mb-2">
+                                    <strong style="color: var(--global-theme-color);">Author:</strong> 
+                                    Félix David Suárez Bonilla
+                                </p>
+                                <p class="mb-2">
+                                    <strong style="color: var(--global-theme-color);">Institution:</strong> 
+                                    National Registry of Costa Rica
+                                </p>
+                                <p class="mb-2">
+                                    <strong style="color: var(--global-theme-color);">Registration Date:</strong> 
+                                    September 6, 2022
+                                </p>
+                            </div>
+
+                            <p class="project-description">
+                                Official copyright registration of "Elva Analytics" with the National Registry of Costa Rica. The work is registered, recognizing the author's intellectual property rights.
+                            </p>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="mt-4 text-left mb-3">
+                            <a href="/assets/docs/Elva_Analytics.pdf" target="_blank" class="btn-download">
+                                View Patent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 
 <style>
     /* Base styles */
