@@ -424,6 +424,11 @@ ninja.data = [{
           description: "This project analyzes IDAT files using R to visualize epigenetic patterns through bar and density plots.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project/";
+            },},{id: "projects-github-actions-demo",
+          title: 'Github Actions Demo',
+          description: "This project uses GitHub Actions for testing, PR rules, and conditional deployment to GitHub Pages.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/12_project/";
             },},{id: "projects-conway-39-s-game-of-life",
           title: 'Conway&amp;#39;s Game of Life',
           description: "A Python QtPY implementation of Conway&#39;s Game of Life.",
