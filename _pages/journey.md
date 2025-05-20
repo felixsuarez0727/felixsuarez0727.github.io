@@ -401,44 +401,48 @@ nav_order: 5
 </style>
 
 <div class="timeline">
-  <!-- Year markers on vertical axis -->
-  <div class="year-marker" style="top: 5%;">
+  <!-- Year markers on vertical axis - now properly aligned with starting years -->
+  <div class="year-marker" style="top: 7%;">
     <div class="year-label">2005</div>
   </div>
-  <div class="year-marker" style="top: 20.5%;">
-    <div class="year-label">2010</div>
+  <div class="year-marker" style="top: 20%;">
+    <!-- <div class="year-label">2010</div> -->
   </div>
-  <div class="year-marker" style="top: 25%;">
+  <div class="year-marker" style="top: 20.1%;">
     <div class="year-label">2011</div>
   </div>
-  <div class="year-marker" style="top: 40%;">
+  <div class="year-marker" style="top: 33.8%;">
+    <div class="year-label">2012</div>
+  </div>
+  <div class="year-marker" style="top: 45.7%;">
     <div class="year-label">2016</div>
   </div>
-  <div class="year-marker" style="top: 45%;">
+  <div class="year-marker" style="top: 50%;">
+    <!-- <div class="year-label">2017</div> -->
+  </div>
+  <div class="year-marker" style="top: 64.6%;">
     <div class="year-label">2017</div>
   </div>
-  <div class="year-marker" style="top: 60%;">
-    <div class="year-label">2020</div>
-  </div>
-  <div class="year-marker" style="top: 80%;">
+  <div class="year-marker" style="top: 100%;">
     <div class="year-label">2025</div>
   </div>
   
-  <!-- Time range indicators -->
-  <div class="year-range year-range-1" style="top: 5%; height: 15%;"></div> <!-- Bachelor's -->
-  <div class="year-range year-range-2" style="top: 20%; height: 5%;"></div> <!-- Erasmus -->
-  <div class="year-range year-range-3" style="top: 25%; height: 15%;"></div> <!-- Master's -->
-  <div class="year-range year-range-4" style="top: 25%; height: 15%;"></div> <!-- PhD -->
-  <div class="year-range year-range-5" style="top: 45%; height: 35%;"></div> <!-- Postdoc Bristol -->
-  <div class="year-range year-range-6" style="top: 45%; height: 35%;"></div> <!-- Postdoc ICMol -->
-  <div class="year-range year-range-7" style="top: 45%; height: 35%;"></div> <!-- Senior Researcher -->
+  <!-- Time range indicators - adjusted to match actual timeline items -->
+  <div class="year-range year-range-1" style="top: 6.4%; height: 11.2%;"></div> <!-- Bachelor's (2005-2009) -->
+  <div class="year-range year-range-2" style="top: 19%; height: 26.5%;"></div> <!-- Licentiate (2012-2017) -->
+  <div class="year-range year-range-3" style="top: 35%; height: 29%;"></div> <!-- Master's in Chemistry (2011-2016) -->
+  <div class="year-range year-range-4" style="top: 45%; height: 28%;"></div> <!-- Master in EE (2016-2019) -->
+  <div class="year-range year-range-5" style="top: 65%; height: 36%;"></div> <!-- PhD (2011-2016) -->
+  <div class="year-range year-range-6" style="top: 65%; height: 36%;"></div> <!-- Postdoc Bristol (2017-2025) -->
+  <div class="year-range year-range-7" style="top: 65%; height: 36%;"></div> <!-- Postdoc ICMol (2017-2025) -->
+  <div class="year-range year-range-8" style="top: 45%; height: 35%;"></div> <!-- Senior Researcher (2017-2025) -->
 
   <!-- Timeline items -->
   <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-1">2005 - 2009</div>
-      <h3>Bachelor's Degree in Electrical Engineering </h3>
+      <h3>Bachelor's Degree in Electrical Engineering</h3>
       <div class="institution-container">
         <div class="institution">University of Costa Rica</div>
         <span class="institution-tooltip">University of Costa Rica, Costa Rica</span>
@@ -446,34 +450,12 @@ nav_order: 5
     </div>
   </div>
   
+  <!-- Master's in Theoretical Chemistry -->
   <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
-      <div class="timeline-period period-color-2">2010</div>
-      <h3>Erasmus Exchange Student</h3>
-      <div class="institution-container">
-        <div class="institution">Loughborough University</div>
-        <span class="institution-tooltip">Loughborough University, UK</span>
-      </div>
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="range-connector"></div>
-    <div class="timeline-content">
-      <div class="timeline-period period-color-3">2011 - 2016</div>
+      <div class="timeline-period period-color-2">2011 - 2016</div>
       <h3>Master's in Theoretical Chemistry</h3>
-      <div class="institution-container">
-        <div class="institution">University of Valencia</div>
-        <span class="institution-tooltip">University of Valencia, Spain</span>
-      </div>
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="range-connector"></div>
-    <div class="timeline-content">
-      <div class="timeline-period period-color-4">2011 - 2016</div>
       <h3>PhD in Theoretical Chemistry</h3>
       <div class="institution-container">
         <div class="institution">University of Valencia</div>
@@ -481,11 +463,40 @@ nav_order: 5
       </div>
     </div>
   </div>
+
+   <!-- Licentiate in Electrical Engineering -->
+  <div class="timeline-item">
+    <div class="range-connector"></div>
+    <div class="timeline-content">
+      <div class="timeline-period period-color-3">2012 - 2017</div>
+      <h3>Licentiate in Electrical Engineering</h3>
+      <div class="institution-container">
+        <div class="institution">University of Costa Rica</div>
+        <span class="institution-tooltip">University of Costa Rica, Costa Rica</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master in Electrical Engineering -->
+  <div class="timeline-item">
+    <div class="range-connector"></div>
+    <div class="timeline-content">
+      <div class="timeline-period period-color-4">2016 - 2019</div>
+      <h3>Master in Electrical Engineering</h3>
+      <div class="institution-container">
+        <div class="institution">University of Costa Rica</div>
+        <span class="institution-tooltip">University of Costa Rica, Costa Rica</span>
+      </div>
+    </div>
+  </div>
+  
+
   
   <div class="divider">
     <span class="divider-text">Recent Years</span>
   </div>
   
+  <!-- Postdoctoral Researcher -->
   <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
@@ -498,6 +509,7 @@ nav_order: 5
     </div>
   </div>
   
+  <!-- Postdoctoral Researcher -->
   <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
@@ -510,6 +522,7 @@ nav_order: 5
     </div>
   </div>
   
+  <!-- Senior Researcher -->
   <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
