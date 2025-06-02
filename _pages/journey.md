@@ -402,25 +402,25 @@ nav_order: 5
 
 <div class="timeline">
   <!-- Year markers on vertical axis - now properly aligned with starting years -->
-  <div class="year-marker" style="top: 7%;">
+  <div class="year-marker" style="top: 8%;">
     <div class="year-label">2005</div>
   </div>
   <div class="year-marker" style="top: 20%;">
     <!-- <div class="year-label">2010</div> -->
   </div>
   <div class="year-marker" style="top: 20.1%;">
-    <div class="year-label">2011</div>
+    <!-- <div class="year-label">2011</div> -->
   </div>
-  <div class="year-marker" style="top: 33.8%;">
+  <div class="year-marker" style="top: 23.3%;">
     <div class="year-label">2012</div>
   </div>
-  <div class="year-marker" style="top: 45.7%;">
+  <div class="year-marker" style="top: 37.1%;">
     <div class="year-label">2016</div>
   </div>
   <div class="year-marker" style="top: 50%;">
     <!-- <div class="year-label">2017</div> -->
   </div>
-  <div class="year-marker" style="top: 64.6%;">
+  <div class="year-marker" style="top: 58.8%;">
     <div class="year-label">2017</div>
   </div>
   <div class="year-marker" style="top: 100%;">
@@ -428,14 +428,14 @@ nav_order: 5
   </div>
   
   <!-- Time range indicators - adjusted to match actual timeline items -->
-  <div class="year-range year-range-1" style="top: 6.4%; height: 11.2%;"></div> <!-- Bachelor's (2005-2009) -->
-  <div class="year-range year-range-2" style="top: 19%; height: 26.5%;"></div> <!-- Licentiate (2012-2017) -->
-  <div class="year-range year-range-3" style="top: 35%; height: 29%;"></div> <!-- Master's in Chemistry (2011-2016) -->
-  <div class="year-range year-range-4" style="top: 45%; height: 28%;"></div> <!-- Master in EE (2016-2019) -->
-  <div class="year-range year-range-5" style="top: 65%; height: 36%;"></div> <!-- PhD (2011-2016) -->
-  <div class="year-range year-range-6" style="top: 65%; height: 36%;"></div> <!-- Postdoc Bristol (2017-2025) -->
-  <div class="year-range year-range-7" style="top: 65%; height: 36%;"></div> <!-- Postdoc ICMol (2017-2025) -->
-  <div class="year-range year-range-8" style="top: 45%; height: 35%;"></div> <!-- Senior Researcher (2017-2025) -->
+  <div class="year-range year-range-1" style="top: 7.4%; height: 9.2%;"></div> <!-- Bachelor's (2005-2009) -->
+  <div class="year-range year-range-2" style="top: 22.4%; height: 35.9%;"></div> <!-- Licentiate (2012-2017) -->
+  <!-- <div class="year-range year-range-3" style="top: 35%; height: 29%;"></div>  Master's in Chemistry (2011-2016) -->
+  <div class="year-range year-range-4" style="top: 36%; height: 28%;"></div> <!-- Master in EE (2016-2019) -->
+  <div class="year-range year-range-5" style="top: 59%; height: 41%;"></div> <!-- PhD (2011-2016) -->
+  <div class="year-range year-range-6" style="top: 59%; height: 41%;"></div> <!-- Postdoc Bristol (2017-2025) -->
+  <div class="year-range year-range-7" style="top: 59%; height: 41%;"></div> <!-- Postdoc ICMol (2017-2025) -->
+  <div class="year-range year-range-8" style="top: 59%; height: 41%;"></div> <!-- Senior Researcher (2017-2025) -->
 
   <!-- Timeline items -->
   <div class="timeline-item">
@@ -451,7 +451,7 @@ nav_order: 5
   </div>
   
   <!-- Master's in Theoretical Chemistry -->
-  <div class="timeline-item">
+  <!-- <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-2">2011 - 2016</div>
@@ -462,7 +462,7 @@ nav_order: 5
         <span class="institution-tooltip">University of Valencia, Spain</span>
       </div>
     </div>
-  </div>
+  </div> -->
 
    <!-- Licentiate in Electrical Engineering -->
   <div class="timeline-item">
