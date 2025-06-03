@@ -402,7 +402,7 @@ nav_order: 5
 
 <div class="timeline">
   <!-- Year markers on vertical axis - now properly aligned with starting years -->
-  <div class="year-marker" style="top: 8%;">
+  <div class="year-marker" style="top: 7.1%;">
     <div class="year-label">2005</div>
   </div>
   <div class="year-marker" style="top: 20%;">
@@ -411,31 +411,34 @@ nav_order: 5
   <div class="year-marker" style="top: 20.1%;">
     <!-- <div class="year-label">2011</div> -->
   </div>
-  <div class="year-marker" style="top: 23.3%;">
+  <div class="year-marker" style="top: 20.5%;">
     <div class="year-label">2012</div>
   </div>
-  <div class="year-marker" style="top: 37.1%;">
+  <div class="year-marker" style="top: 32.6%;">
     <div class="year-label">2016</div>
   </div>
-  <div class="year-marker" style="top: 50%;">
-    <!-- <div class="year-label">2017</div> -->
+  <div class="year-marker" style="top: 51.7%;">
+    <div class="year-label">2015</div> 
   </div>
-  <div class="year-marker" style="top: 58.8%;">
-    <div class="year-label">2017</div>
+  <div class="year-marker" style="top: 63.8%;">
+    <div class="year-label">2019</div>
   </div>
-  <div class="year-marker" style="top: 100%;">
+  <div class="year-marker" style="top: 75.9%;">
+    <div class="year-label">2024</div>
+  </div>
+  <div class="year-marker" style="top: 87.9%;">
     <div class="year-label">2025</div>
   </div>
   
   <!-- Time range indicators - adjusted to match actual timeline items -->
-  <div class="year-range year-range-1" style="top: 7.4%; height: 9.2%;"></div> <!-- Bachelor's (2005-2009) -->
-  <div class="year-range year-range-2" style="top: 22.4%; height: 35.9%;"></div> <!-- Licentiate (2012-2017) -->
+  <!--  <div class="year-range year-range-1" style="top: 7.4%; height: 9.2%;"></div> <!-- Bachelor's (2005-2009) -->
+  <!-- <div class="year-range year-range-2" style="top: 22.4%; height: 35.9%;"></div> <!-- Licentiate (2012-2017) -->
   <!-- <div class="year-range year-range-3" style="top: 35%; height: 29%;"></div>  Master's in Chemistry (2011-2016) -->
-  <div class="year-range year-range-4" style="top: 36%; height: 28%;"></div> <!-- Master in EE (2016-2019) -->
-  <div class="year-range year-range-5" style="top: 59%; height: 41%;"></div> <!-- PhD (2011-2016) -->
-  <div class="year-range year-range-6" style="top: 59%; height: 41%;"></div> <!-- Postdoc Bristol (2017-2025) -->
-  <div class="year-range year-range-7" style="top: 59%; height: 41%;"></div> <!-- Postdoc ICMol (2017-2025) -->
-  <div class="year-range year-range-8" style="top: 59%; height: 41%;"></div> <!-- Senior Researcher (2017-2025) -->
+  <!-- <div class="year-range year-range-4" style="top: 36%; height: 28%;"></div> <!-- Master in EE (2016-2019) -->
+  <!--  <div class="year-range year-range-5" style="top: 59%; height: 41%;"></div> <!-- PhD (2011-2016) -->
+  <!--  <div class="year-range year-range-6" style="top: 59%; height: 41%;"></div> <!-- Postdoc Bristol (2017-2025) -->
+  <!-- <div class="year-range year-range-7" style="top: 59%; height: 41%;"></div> <!-- Postdoc ICMol (2017-2025) -->
+  <!-- <div class="year-range year-range-8" style="top: 59%; height: 41%;"></div> <!-- Senior Researcher (2017-2025) -->
 
   <!-- Timeline items -->
   <div class="timeline-item">
@@ -497,7 +500,7 @@ nav_order: 5
   </div>
   
   <!-- Postdoctoral Researcher -->
-  <div class="timeline-item">
+  <!-- <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-5">2017 - 2025</div>
@@ -507,17 +510,42 @@ nav_order: 5
         <span class="institution-tooltip">University of Bristol, UK</span>
       </div>
     </div>
-  </div>
-  
-  <!-- Postdoctoral Researcher -->
+  </div> -->
+  <!-- Intel: Product Developer Engineer -->
   <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
-      <div class="timeline-period period-color-6">2017 - 2025</div>
-      <h3>Postdoctoral Researcher</h3>
+      <div class="timeline-period period-color-5">2012 - 2015</div>
+      <h3>Product Developer Engineer</h3>
       <div class="institution-container">
-        <div class="institution">Institute of Molecular Science</div>
-        <span class="institution-tooltip">Institute of Molecular Science (ICMol), Spain</span>
+        <div class="institution">Intel</div>
+        <span class="institution-tooltip">Intel, Costa Rica</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Intel: Senior Software Engineer -->
+  <div class="timeline-item">
+    <div class="range-connector"></div>
+    <div class="timeline-content">
+      <div class="timeline-period period-color-5">2015 - 2019</div>
+      <h3>Senior Software Engineer</h3>
+      <div class="institution-container">
+        <div class="institution">Intel</div>
+        <span class="institution-tooltip">Intel, Costa Rica</span>
+      </div>
+    </div>
+  </div>
+    
+  <!-- Botco AI (optional addition) -->
+  <div class="timeline-item">
+    <div class="range-connector"></div>
+    <div class="timeline-content">
+      <div class="timeline-period period-color-6">2019 - 2024</div>
+      <h3>Full Stack Developer</h3>
+      <div class="institution-container">
+        <div class="institution">Botco AI</div>
+        <span class="institution-tooltip">Botco AI, Costa Rica</span>
       </div>
     </div>
   </div>
