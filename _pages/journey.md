@@ -402,7 +402,7 @@ nav_order: 5
 
 <div class="timeline">
   <!-- Year markers on vertical axis - now properly aligned with starting years -->
-  <div class="year-marker" style="top: 7.1%;">
+  <div class="year-marker" style="top: 8%;">
     <div class="year-label">2005</div>
   </div>
   <div class="year-marker" style="top: 20%;">
@@ -411,23 +411,23 @@ nav_order: 5
   <div class="year-marker" style="top: 20.1%;">
     <!-- <div class="year-label">2011</div> -->
   </div>
-  <div class="year-marker" style="top: 20.5%;">
+  <div class="year-marker" style="top: 23.2%;">
     <div class="year-label">2012</div>
   </div>
-  <div class="year-marker" style="top: 32.6%;">
+  <div class="year-marker" style="top: 37.1%;">
     <div class="year-label">2016</div>
   </div>
-  <div class="year-marker" style="top: 51.7%;">
+  <div class="year-marker" style="top: 58.8%;">
     <div class="year-label">2015</div> 
   </div>
-  <div class="year-marker" style="top: 63.8%;">
+  <div class="year-marker" style="top: 72.6%;">
     <div class="year-label">2019</div>
   </div>
-  <div class="year-marker" style="top: 75.9%;">
+  <div class="year-marker" style="top: 86.2%;">
     <div class="year-label">2024</div>
   </div>
   <div class="year-marker" style="top: 87.9%;">
-    <div class="year-label">2025</div>
+    <!-- <div class="year-label">2025</div> -->
   </div>
   
   <!-- Time range indicators - adjusted to match actual timeline items -->
@@ -551,7 +551,7 @@ nav_order: 5
   </div>
   
   <!-- Senior Researcher -->
-  <div class="timeline-item">
+  <!-- <div class="timeline-item">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-7">2017 - 2025</div>
@@ -562,7 +562,7 @@ nav_order: 5
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <script>
   // Script to connect ranges with items visually
