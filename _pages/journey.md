@@ -4,7 +4,7 @@ title: Journey
 permalink: /journey/
 description: Academic and Professional Timeline
 nav: true
-nav_order: 5
+nav-order: 5
 ---
 
 <style>
@@ -38,6 +38,7 @@ nav_order: 5
     display: flex;
     align-items: center;
     z-index: 2;
+    transition: all 0.3s ease;
   }
 
   .year-marker-line {
@@ -52,8 +53,14 @@ nav_order: 5
     color: white;
     border-radius: 10px;
     font-size: 0.75rem;
-    margin-left: 5px;
     white-space: nowrap;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+
+  .year-marker:hover .year-label {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   }
 
   /* Elementos de la línea de tiempo */
@@ -362,13 +369,14 @@ nav_order: 5
     }
     
     .year-marker {
-      left: 31px !important;
+      left: 11.9px !important;
       transform: translateX(0) scale(0.9);
     }
     
     .year-label {
       font-size: 0.7rem;
       padding: 1px 5px;
+      margin-top: 21px;
     }
     
     .year-range {
@@ -401,47 +409,10 @@ nav_order: 5
 </style>
 
 <div class="timeline">
-  <!-- Year markers on vertical axis - now properly aligned with starting years -->
-  <div class="year-marker" style="top: 8%;">
-    <div class="year-label">2005</div>
-  </div>
-  <div class="year-marker" style="top: 20%;">
-    <!-- <div class="year-label">2010</div> -->
-  </div>
-  <div class="year-marker" style="top: 20.1%;">
-    <!-- <div class="year-label">2011</div> -->
-  </div>
-  <div class="year-marker" style="top: 23.2%;">
-    <div class="year-label">2012</div>
-  </div>
-  <div class="year-marker" style="top: 37.1%;">
-    <div class="year-label">2016</div>
-  </div>
-  <div class="year-marker" style="top: 58.8%;">
-    <div class="year-label">2015</div> 
-  </div>
-  <div class="year-marker" style="top: 72.6%;">
-    <div class="year-label">2019</div>
-  </div>
-  <div class="year-marker" style="top: 86.2%;">
-    <div class="year-label">2024</div>
-  </div>
-  <div class="year-marker" style="top: 87.9%;">
-    <!-- <div class="year-label">2025</div> -->
-  </div>
+  <!-- Year markers will be automatically inserted here by JavaScript -->
   
-  <!-- Time range indicators - adjusted to match actual timeline items -->
-  <!--  <div class="year-range year-range-1" style="top: 7.4%; height: 9.2%;"></div> <!-- Bachelor's (2005-2009) -->
-  <!-- <div class="year-range year-range-2" style="top: 22.4%; height: 35.9%;"></div> <!-- Licentiate (2012-2017) -->
-  <!-- <div class="year-range year-range-3" style="top: 35%; height: 29%;"></div>  Master's in Chemistry (2011-2016) -->
-  <!-- <div class="year-range year-range-4" style="top: 36%; height: 28%;"></div> <!-- Master in EE (2016-2019) -->
-  <!--  <div class="year-range year-range-5" style="top: 59%; height: 41%;"></div> <!-- PhD (2011-2016) -->
-  <!--  <div class="year-range year-range-6" style="top: 59%; height: 41%;"></div> <!-- Postdoc Bristol (2017-2025) -->
-  <!-- <div class="year-range year-range-7" style="top: 59%; height: 41%;"></div> <!-- Postdoc ICMol (2017-2025) -->
-  <!-- <div class="year-range year-range-8" style="top: 59%; height: 41%;"></div> <!-- Senior Researcher (2017-2025) -->
-
   <!-- Timeline items -->
-  <div class="timeline-item">
+  <div class="timeline-item" data-year="2005" data-year-id="2005-1">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-1">2005 - 2009</div>
@@ -452,23 +423,9 @@ nav_order: 5
       </div>
     </div>
   </div>
-  
-  <!-- Master's in Theoretical Chemistry -->
-  <!-- <div class="timeline-item">
-    <div class="range-connector"></div>
-    <div class="timeline-content">
-      <div class="timeline-period period-color-2">2011 - 2016</div>
-      <h3>Master's in Theoretical Chemistry</h3>
-      <h3>PhD in Theoretical Chemistry</h3>
-      <div class="institution-container">
-        <div class="institution">University of Valencia</div>
-        <span class="institution-tooltip">University of Valencia, Spain</span>
-      </div>
-    </div>
-  </div> -->
 
-   <!-- Licentiate in Electrical Engineering -->
-  <div class="timeline-item">
+  <!-- Licentiate in Electrical Engineering -->
+  <div class="timeline-item" data-year="2012" data-year-id="2012-1">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-3">2012 - 2017</div>
@@ -481,7 +438,7 @@ nav_order: 5
   </div>
 
   <!-- Master in Electrical Engineering -->
-  <div class="timeline-item">
+  <div class="timeline-item" data-year="2016" data-year-id="2016-1">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-4">2016 - 2019</div>
@@ -493,26 +450,12 @@ nav_order: 5
     </div>
   </div>
   
-
-  
   <div class="divider">
     <span class="divider-text">Recent Years</span>
   </div>
   
-  <!-- Postdoctoral Researcher -->
-  <!-- <div class="timeline-item">
-    <div class="range-connector"></div>
-    <div class="timeline-content">
-      <div class="timeline-period period-color-5">2017 - 2025</div>
-      <h3>Postdoctoral Researcher</h3>
-      <div class="institution-container">
-        <div class="institution">University of Bristol</div>
-        <span class="institution-tooltip">University of Bristol, UK</span>
-      </div>
-    </div>
-  </div> -->
   <!-- Intel: Product Developer Engineer -->
-  <div class="timeline-item">
+  <div class="timeline-item" data-year="2015" data-year-id="2015-1">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-5">2012 - 2015</div>
@@ -525,7 +468,7 @@ nav_order: 5
   </div>
 
   <!-- Intel: Senior Software Engineer -->
-  <div class="timeline-item">
+  <div class="timeline-item" data-year="2019" data-year-id="2019-1">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-5">2015 - 2019</div>
@@ -536,9 +479,23 @@ nav_order: 5
       </div>
     </div>
   </div>
-    
-  <!-- Botco AI (optional addition) -->
-  <div class="timeline-item">
+
+
+  <!-- Master of Digital Business -->
+  <div class="timeline-item" data-year="2023" data-year-id="2023-1">
+    <div class="range-connector"></div>
+    <div class="timeline-content">
+      <div class="timeline-period period-color-6">2023</div>
+      <h3>Master of Digital Business</h3>
+      <div class="institution-container">
+        <div class="institution">Polytechnic University of Valencia</div>
+        <span class="institution-tooltip">Polytechnic University of Valencia, Spain</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botco AI -->
+  <div class="timeline-item" data-year="2024" data-year-id="2024-1">
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-6">2019 - 2024</div>
@@ -549,41 +506,60 @@ nav_order: 5
       </div>
     </div>
   </div>
-  
-  <!-- Senior Researcher -->
-  <!-- <div class="timeline-item">
+
+  <!-- Master in Bioinformatics and AI (2024) -->
+  <div class="timeline-item" data-year="2024" data-year-id="2024-2">
     <div class="range-connector"></div>
     <div class="timeline-content">
-      <div class="timeline-period period-color-7">2017 - 2025</div>
-      <h3>Senior Researcher</h3>
+      <div class="timeline-period period-color-6">2024</div>
+      <h3>Master in Bioinformatics and AI</h3>
       <div class="institution-container">
-        <div class="institution">ProtoQSAR, Ltd.</div>
-        <span class="institution-tooltip">ProtoQSAR, Ltd. - Computational Chemistry Solutions</span>
+        <div class="institution">European University of Valencia</div>
+        <span class="institution-tooltip">European University of Valencia, Spain</span>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <script>
-  // Script to connect ranges with items visually
-  document.addEventListener('DOMContentLoaded', function() {
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    const yearRanges = document.querySelectorAll('.year-range');
-    
-    timelineItems.forEach((item, index) => {
-      if (index < yearRanges.length) {
-        item.addEventListener('mouseenter', () => {
-          yearRanges[index].style.opacity = '0.6';
-          yearRanges[index].style.width = '8px';
-          yearRanges[index].style.marginLeft = '-4px';
-        });
-        
-        item.addEventListener('mouseleave', () => {
-          yearRanges[index].style.opacity = '0.0';
-          yearRanges[index].style.width = '4px';
-          yearRanges[index].style.marginLeft = '-2px';
-        });
-      }
+function buildMarkers() {
+  const timeline = document.querySelector('.timeline');
+  const existingMarkers = document.querySelectorAll('.year-marker');
+  existingMarkers.forEach(m => m.remove());
+
+  const items = document.querySelectorAll('.timeline-item');
+  const timelineHeight = timeline.offsetHeight;
+
+  items.forEach(item => {
+    const year = item.getAttribute('data-year');
+
+    const itemTop = item.offsetTop;
+    const markerPos = (itemTop + 20) / timelineHeight * 100;
+
+    const marker = document.createElement('div');
+    marker.className = 'year-marker';
+    marker.style.top = `${markerPos}%`;
+
+    const label = document.createElement('div');
+    label.className = 'year-label';
+    label.textContent = year;
+
+    marker.appendChild(label);
+    timeline.insertBefore(marker, timeline.firstChild);
+
+    marker.addEventListener('click', () => {
+      item.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   });
+}
+
+// Run AFTER CSS layout stabilizes
+window.addEventListener('load', () => {
+  setTimeout(buildMarkers, 300);
+});
+
+// Rebuild on resize (mobile ↔ desktop)
+window.addEventListener('resize', () => {
+  setTimeout(buildMarkers, 200);
+});
 </script>
