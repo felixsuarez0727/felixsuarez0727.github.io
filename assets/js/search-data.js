@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-journey",
+          title: "Journey",
+          description: "Academic and Professional Timeline",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/journey/";
+          },
+        },{id: "nav-publications",
           title: "Publications",
           description: "",
           section: "Navigation",
@@ -36,13 +43,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/academium/";
-          },
-        },{id: "nav-journey",
-          title: "Journey",
-          description: "Academic and Professional Timeline",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/journey/";
           },
         },{id: "nav-cv",
           title: "CV",
