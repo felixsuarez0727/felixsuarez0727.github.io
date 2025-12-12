@@ -454,31 +454,22 @@ nav-order: 5
     <span class="divider-text">Recent Years</span>
   </div>
   
-  <!-- Intel: Product Developer Engineer -->
-  <div class="timeline-item" data-year="2015" data-year-id="2015-1">
+  <!-- Intel: 2012 - 2019 -->
+  <div class="timeline-item" data-year="2019" data-year-id="2012-2019">
     <div class="range-connector"></div>
     <div class="timeline-content">
-      <div class="timeline-period period-color-5">2012 - 2015</div>
-      <h3>Product Developer Engineer</h3>
+      <div class="timeline-period period-color-5">2012 - 2019</div>
+      <h3><small>Product Developer Engineer</small> <br>
+       Senior Software Engineer</h3>
       <div class="institution-container">
-        <div class="institution">Intel</div>
         <span class="institution-tooltip">Intel, Costa Rica</span>
-      </div>
+       <span>
+       Intel
+       </span>
+       </div>
     </div>
   </div>
 
-  <!-- Intel: Senior Software Engineer -->
-  <div class="timeline-item" data-year="2019" data-year-id="2019-1">
-    <div class="range-connector"></div>
-    <div class="timeline-content">
-      <div class="timeline-period period-color-5">2015 - 2019</div>
-      <h3>Senior Software Engineer</h3>
-      <div class="institution-container">
-        <div class="institution">Intel</div>
-        <span class="institution-tooltip">Intel, Costa Rica</span>
-      </div>
-    </div>
-  </div>
 
 
   <!-- Master of Digital Business -->
@@ -496,16 +487,16 @@ nav-order: 5
 
   <!-- Botco AI -->
   <div class="timeline-item" data-year="2024" data-year-id="2024-1">
-    <div class="range-connector"></div>
-    <div class="timeline-content">
-      <div class="timeline-period period-color-6">2019 - 2024</div>
-      <h3>Full Stack Developer</h3>
-      <div class="institution-container">
-        <div class="institution">Botco AI</div>
-        <span class="institution-tooltip">Botco AI, Costa Rica</span>
-      </div>
+  <div class="range-connector"></div>
+  <div class="timeline-content">
+    <div class="timeline-period period-color-6">2019 - 2024</div>
+    <h3>Full Stack Developer</h3>
+    <div class="institution-container">
+      <div class="institution">Botco AI</div>
+      <span class="institution-tooltip">Botco AI, Costa Rica</span>
     </div>
   </div>
+</div>
 
   <!-- Master in Bioinformatics and AI (2024) -->
   <div class="timeline-item" data-year="2024" data-year-id="2024-2">
