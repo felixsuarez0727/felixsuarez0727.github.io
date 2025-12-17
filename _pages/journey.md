@@ -459,8 +459,7 @@ nav-order: 5
     <div class="range-connector"></div>
     <div class="timeline-content">
       <div class="timeline-period period-color-5">2012 - 2019</div>
-      <h3><small>Product Developer Engineer</small> <br>
-       Senior Software Engineer</h3>
+      <h3>Senior Software Engineer</h3>
       <div class="institution-container">
         <span class="institution-tooltip">Intel, Costa Rica</span>
        <span>
