@@ -485,10 +485,10 @@ nav-order: 5
   </div>
 
   <!-- Botco AI -->
-  <div class="timeline-item" data-year="2024" data-year-id="2024-1">
+  <div class="timeline-item" data-year="2025" data-year-id="2025-1">
   <div class="range-connector"></div>
   <div class="timeline-content">
-    <div class="timeline-period period-color-6">2019 - 2024</div>
+    <div class="timeline-period period-color-6">2020 - 2025</div>
     <h3>Full Stack Developer</h3>
     <div class="institution-container">
       <div class="institution">Botco AI</div>
