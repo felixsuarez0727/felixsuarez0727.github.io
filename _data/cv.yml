@@ -100,6 +100,30 @@
 - title: Publications
   type: time_table
   contents:
+    - title: Hardware-Efficient Neural Architecture Search for Wireless Signal Classification on Edge Devices
+      year: 2026
+      description:
+        - Applied Neural Architecture Search to Design Hardware-Efficient Models for Wireless Signal Classification on Edge Devices.
+
+    - title: Neural Architecture Search for Efficient WiFi Spectrum Sensing
+      year: 2026
+      description:
+        - Applied Neural Architecture Search to Discover a Highly Efficient, High-Accuracy Model for WiFi Spectrum Sensing, Optimized for Fast Mobile Deployment.
+
+    - title: SQL Server Optimization Configuration-Based Performance Improvements
+      year: 2025
+      description:
+        - Applied a Systematic Diagnosis and Optimization Methodology to Resolve Performance Issues in a Production SQL Server Environment.
+
+    - title: Neural Architecture Search for Over-the-Air Telecommunication Signal Classification
+      year: 2025
+      description:
+        - Applied Neural Architecture Search and Bayesian Optimization to Design an Efficient CNN for Telecommunication Signal Classification.
+
+    - title: Multi-Domain Feature Extraction for ML-Based Over-the-Air RF Signal Classification
+      year: 2025
+      description:
+        - Built a Multi-Domain Feature Fusion System Combining Time-Frequency and Wavelet Representations for Accurate RF Signal Classification.
     - title: BETO Emotion Analysis of Facebook Users Reacting to Major Media Outlets in Costa Rica
       year: 2021
       description:
